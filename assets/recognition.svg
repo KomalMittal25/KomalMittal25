@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 430" width="1200" height="430" role="img" aria-labelledby="ach-title ach-desc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 450" width="1200" height="450" role="img" aria-labelledby="ach-title ach-desc">
   <title id="ach-title">Recognition</title>
   <desc id="ach-desc">Meesho ScriptedBy Her 2.0 National Semi-Finalist, ranked Top 50 among 36,000+ women developers. Flipkart GRiD 8.0 Semi-Finalist among 165,000+ applicants. CGPA 9.32. Sakhi: 11-node LangGraph with 4 specialist agents. Tickless: 60+ Vitest unit tests.</desc>
 
@@ -57,15 +57,15 @@
     @media (prefers-reduced-motion: reduce) { .ach-trace-a, .ach-trace-b { display: none; } }
   </style>
 
-  <rect width="1200" height="430" rx="20" fill="url(#ach-bg)"/>
-  <rect x=".5" y=".5" width="1199" height="429" rx="19.5" fill="none" stroke="#6F8FF7" stroke-opacity=".18"/>
+  <rect width="1200" height="450" rx="20" fill="url(#ach-bg)"/>
+  <rect x=".5" y=".5" width="1199" height="449" rx="19.5" fill="none" stroke="#6F8FF7" stroke-opacity=".18"/>
 
   <!-- Meesho ScriptedBy{Her} 2.0 — hero card -->
   <g class="ach-in a1"><g transform="translate(24 24)">
     <g clip-path="url(#ach-clip-a)">
       <rect width="690" height="250" fill="#0B1230"/>
       <rect width="690" height="250" fill="url(#ach-glow-a)"/>
-      <text class="ach-serif" x="672" y="124" text-anchor="end" font-size="128" font-weight="300" letter-spacing="-6" fill="url(#ach-outline)">Top 50</text>
+      <text class="ach-serif" x="672" y="114" text-anchor="end" font-size="128" font-weight="300" letter-spacing="-6" fill="url(#ach-outline)">Top 50</text>
       <rect x="-300" y="0" width="260" height="250" fill="url(#ach-sheen)" transform="skewX(-18)">
         <animate attributeName="x" values="-300;900;900" keyTimes="0;.35;1" dur="9s" begin="2s" repeatCount="indefinite"/>
       </rect>
@@ -73,9 +73,9 @@
     <rect x=".5" y=".5" width="689" height="249" rx="15.5" fill="none" stroke="#6F8FF7" stroke-opacity=".4"/>
     <rect class="ach-trace-a" x=".5" y=".5" width="689" height="249" rx="15.5" fill="none" stroke="url(#ach-trace)" stroke-width="1.8" stroke-linecap="round"/>
     <rect x="40" y="0" width="300" height="1" fill="url(#ach-hair)"/>
-    <text class="ach-mono" x="36" y="154" font-size="12" letter-spacing="2.6" fill="#6F8FF7">MEESHO · SCRIPTEDBY{HER} 2.0 · AGENTIC AI FOR BHARAT</text>
-    <text class="ach-serif" x="34" y="204" font-size="46" font-weight="300" letter-spacing="-1" fill="#EEF2FF">National Semi-Finalist</text>
-    <text class="ach-sans" x="36" y="230" font-size="14" fill="#A5AFCB">Top 50 of 36,000+ women developers · India's largest women-only hackathon</text>
+    <text class="ach-mono" x="36" y="138" font-size="12" letter-spacing="2.6" fill="#6F8FF7">MEESHO · SCRIPTEDBY{HER} 2.0 · AGENTIC AI FOR BHARAT</text>
+    <text class="ach-serif" x="34" y="188" font-size="46" font-weight="300" letter-spacing="-1" fill="#EEF2FF">National Semi-Finalist</text>
+    <text class="ach-sans" x="36" y="226" font-size="14" fill="#A5AFCB">Top 50 of 36,000+ women developers · India's largest women-only hackathon</text>
   </g></g>
 
   <!-- Flipkart GRiD 8.0 -->
@@ -84,14 +84,14 @@
       <g clip-path="url(#ach-clip-b)">
         <rect width="450" height="250" fill="#0B1230"/>
         <rect width="450" height="250" fill="url(#ach-glow-b)"/>
-        <text class="ach-serif" x="462" y="132" text-anchor="end" font-size="160" font-style="italic" font-weight="300" letter-spacing="-6" fill="none" stroke="#B9CBFF" stroke-opacity=".3">8.0</text>
+        <text class="ach-serif" x="462" y="122" text-anchor="end" font-size="160" font-style="italic" font-weight="300" letter-spacing="-6" fill="none" stroke="#B9CBFF" stroke-opacity=".3">8.0</text>
       </g>
       <rect x=".5" y=".5" width="449" height="249" rx="15.5" fill="none" stroke="#6F8FF7" stroke-opacity=".32"/>
       <rect class="ach-trace-b" x=".5" y=".5" width="449" height="249" rx="15.5" fill="none" stroke="url(#ach-trace)" stroke-width="1.8" stroke-linecap="round"/>
       <rect x="40" y="0" width="220" height="1" fill="url(#ach-hair)"/>
-      <text class="ach-mono" x="32" y="154" font-size="12" letter-spacing="2.6" fill="#6F8FF7">FLIPKART · GRiD 8.0</text>
-      <text class="ach-serif" x="30" y="204" font-size="46" font-weight="300" letter-spacing="-1" fill="#EEF2FF">Semi-Finalist</text>
-      <text class="ach-sans" x="32" y="230" font-size="14" fill="#A5AFCB">165,000+ applicants · India's largest campus challenge</text>
+      <text class="ach-mono" x="32" y="138" font-size="12" letter-spacing="2.6" fill="#6F8FF7">FLIPKART · GRiD 8.0</text>
+      <text class="ach-serif" x="30" y="188" font-size="46" font-weight="300" letter-spacing="-1" fill="#EEF2FF">Semi-Finalist</text>
+      <text class="ach-sans" x="32" y="226" font-size="14" fill="#A5AFCB">165,000+ applicants · India's largest campus challenge</text>
     </g>
   </g></g>
 
@@ -103,32 +103,32 @@
     <g transform="translate(36 300)">
       <circle cx="0" cy="0" r="3.5" fill="#B9CBFF"/>
       <text class="ach-mono" y="34" font-size="11" letter-spacing="2" fill="#6F8FF7">ACADEMICS</text>
-      <text class="ach-serif" y="78" font-size="40" font-weight="300" fill="#EEF2FF">9.32</text>
-      <text y="102">CGPA · B.Tech IT</text>
+      <text class="ach-serif" y="80" font-size="40" font-weight="300" fill="#EEF2FF">9.32</text>
+      <text y="114">CGPA · B.Tech IT</text>
     </g>
     <g transform="translate(266 300)">
       <circle cx="0" cy="0" r="3.5" fill="#B9CBFF"/>
       <text class="ach-mono" y="34" font-size="11" letter-spacing="2" fill="#6F8FF7">MEESHO HACKATHON</text>
-      <text class="ach-serif" y="78" font-size="40" font-weight="300" fill="#EEF2FF">Top 50</text>
-      <text y="102">of 36,000+ developers</text>
+      <text class="ach-serif" y="80" font-size="40" font-weight="300" fill="#EEF2FF">Top 50</text>
+      <text y="114">of 36,000+ developers</text>
     </g>
     <g transform="translate(496 300)">
       <circle cx="0" cy="0" r="3.5" fill="#B9CBFF"/>
       <text class="ach-mono" y="34" font-size="11" letter-spacing="2" fill="#6F8FF7">FLIPKART GRiD 8.0</text>
-      <text class="ach-serif" y="78" font-size="40" font-weight="300" fill="#EEF2FF">165K+</text>
-      <text y="102">applicants in the field</text>
+      <text class="ach-serif" y="80" font-size="40" font-weight="300" fill="#EEF2FF">165K+</text>
+      <text y="114">applicants in the field</text>
     </g>
     <g transform="translate(726 300)">
       <circle cx="0" cy="0" r="3.5" fill="#B9CBFF"/>
       <text class="ach-mono" y="34" font-size="11" letter-spacing="2" fill="#6F8FF7">SAKHI</text>
-      <text class="ach-serif" y="78" font-size="40" font-weight="300" fill="#EEF2FF">11</text>
-      <text y="102">LangGraph nodes, 4 agents</text>
+      <text class="ach-serif" y="80" font-size="40" font-weight="300" fill="#EEF2FF">11</text>
+      <text y="114">LangGraph nodes, 4 agents</text>
     </g>
     <g transform="translate(956 300)">
       <circle cx="0" cy="0" r="3.5" fill="#B9CBFF"/>
       <text class="ach-mono" y="34" font-size="11" letter-spacing="2" fill="#6F8FF7">TICKLESS</text>
-      <text class="ach-serif" y="78" font-size="40" font-weight="300" fill="#EEF2FF">60+</text>
-      <text y="102">Vitest unit tests</text>
+      <text class="ach-serif" y="80" font-size="40" font-weight="300" fill="#EEF2FF">60+</text>
+      <text y="114">Vitest unit tests</text>
     </g>
   </g>
 </svg>

@@ -1,10 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 370" width="1200" height="370" role="img" aria-labelledby="ex-t">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" width="1200" height="480" role="img" aria-labelledby="ex-t">
   <title id="ex-t">NSE Trading Engine: a 24/7 opening-range-breakout engine for NSE equities, built as Python Engineering Intern at Meevick Enterprises.</title>
   <defs>
     <linearGradient id="ex-bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#0B1230"/><stop offset="1" stop-color="#070B1F"/>
     </linearGradient>
-    <radialGradient id="ex-glow" cx="82%" cy="30%" r="55%">
+    <radialGradient id="ex-glow" cx="80%" cy="38%" r="55%">
       <stop offset="0" stop-color="#2647C8" stop-opacity=".55"/><stop offset="1" stop-color="#172B78" stop-opacity="0"/>
     </radialGradient>
     <pattern id="ex-grid" width="28" height="28" patternUnits="userSpaceOnUse">
@@ -13,7 +13,7 @@
     <filter id="ex-glowf" x="-50%" y="-50%" width="200%" height="200%">
       <feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
-    <clipPath id="ex-clip"><rect width="1200" height="370" rx="18"/></clipPath>
+    <clipPath id="ex-clip"><rect width="1200" height="480" rx="18"/></clipPath>
     <linearGradient id="ex-trace" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#EEF2FF"/><stop offset=".45" stop-color="#B9CBFF"/><stop offset="1" stop-color="#6F8FF7" stop-opacity="0"/>
     </linearGradient>
@@ -34,26 +34,26 @@
     @keyframes ex-draw { to { stroke-dashoffset: 0; } }
     @keyframes ex-bar { from { transform: scaleY(.25); } to { transform: scaleY(1); } }
     @media (prefers-reduced-motion: reduce) { .ex-in, .ex-chip, .ex-pop, .ex-bar { animation: none; } .ex-draw, .ex-draw-late { animation: none; stroke-dashoffset: 0; } }
-    .ex-trace { stroke-dasharray: 564 3136; stroke-dashoffset: 3700; animation: ex-trace 7s linear infinite; }
+    .ex-trace { stroke-dasharray: 564 2792; stroke-dashoffset: 3356; animation: ex-trace 7s linear infinite; }
     @keyframes ex-trace { to { stroke-dashoffset: 0; } }
     @media (prefers-reduced-motion: reduce) { .ex-trace { display: none; } }
   </style>
   <g clip-path="url(#ex-clip)">
-    <rect width="1200" height="370" fill="url(#ex-bg)"/>
-    <rect x="720" width="480" height="370" fill="url(#ex-grid)"/>
-    <rect width="1200" height="370" fill="url(#ex-glow)"/>
+    <rect width="1200" height="480" fill="url(#ex-bg)"/>
+    <rect x="690" width="510" height="480" fill="url(#ex-grid)"/>
+    <rect width="1200" height="480" fill="url(#ex-glow)"/>
     <g class="ex-in ex-d1">
-      <text class="ex-mono" x="56" y="62" font-size="12" letter-spacing="2.6" fill="#6F8FF7">EXPERIENCE · MEEVICK ENTERPRISES · JUN – JUL 2026</text>
-      <text class="ex-serif" x="54" y="126" font-size="52" font-weight="300" letter-spacing="-1.5" fill="#EEF2FF">Trading Engine<tspan class="ex-serif" font-size="22" font-style="italic" fill="#B9CBFF" dx="14">Python Engineering Intern</tspan></text>
-      <text class="ex-sans" x="56" y="166" font-size="17" fill="#A5AFCB">A 24/7 breakout engine for NSE equities, gated by a sector-index vote.</text>
-      <text class="ex-mono" x="56" y="200" font-size="12.5" fill="#B9CBFF"><tspan fill="#6F8FF7">BUILT ›</tspan> Upstox REST behind a self-healing 401 replay · rate limits</text>
-      <line class="ex-draw" x1="56" y1="226" x2="680" y2="226" stroke="#6F8FF7" stroke-opacity=".32"/>
-    <g transform="translate(56 266)"><text class="ex-serif" font-size="34" font-weight="300" fill="#EEF2FF">18</text><text class="ex-sans" y="24" font-size="12.5" fill="#A5AFCB">rung trailing stop-loss</text></g>
-    <g transform="translate(261 266)"><text class="ex-serif" font-size="34" font-weight="300" fill="#EEF2FF">₹3,000</text><text class="ex-sans" y="24" font-size="12.5" fill="#A5AFCB">hard stop, never breached</text></g>
-    <g transform="translate(466 266)"><text class="ex-serif" font-size="34" font-weight="300" fill="#EEF2FF">24/7</text><text class="ex-sans" y="24" font-size="12.5" fill="#A5AFCB">on AWS EC2 with cron</text></g>
-      <g class="ex-chip" style="animation-delay:1.00s"><rect x="56" y="314" width="63" height="26" rx="13" fill="#111D4A" stroke="#6F8FF7" stroke-opacity=".38"/><text class="ex-mono" x="87.5" y="331" text-anchor="middle" font-size="11.5" fill="#B9CBFF">Python</text></g><g class="ex-chip" style="animation-delay:1.12s"><rect x="127" y="314" width="63" height="26" rx="13" fill="#111D4A" stroke="#6F8FF7" stroke-opacity=".38"/><text class="ex-mono" x="158.5" y="331" text-anchor="middle" font-size="11.5" fill="#B9CBFF">Pandas</text></g><g class="ex-chip" style="animation-delay:1.24s"><rect x="198" y="314" width="91" height="26" rx="13" fill="#111D4A" stroke="#6F8FF7" stroke-opacity=".38"/><text class="ex-mono" x="243.5" y="331" text-anchor="middle" font-size="11.5" fill="#B9CBFF">Upstox API</text></g><g class="ex-chip" style="animation-delay:1.36s"><rect x="297" y="314" width="70" height="26" rx="13" fill="#111D4A" stroke="#6F8FF7" stroke-opacity=".38"/><text class="ex-mono" x="332" y="331" text-anchor="middle" font-size="11.5" fill="#B9CBFF">AWS EC2</text></g><g class="ex-chip" style="animation-delay:1.48s"><rect x="375" y="314" width="49" height="26" rx="13" fill="#111D4A" stroke="#6F8FF7" stroke-opacity=".38"/><text class="ex-mono" x="399.5" y="331" text-anchor="middle" font-size="11.5" fill="#B9CBFF">cron</text></g><g class="ex-chip" style="animation-delay:1.60s"><rect x="432" y="314" width="77" height="26" rx="13" fill="#111D4A" stroke="#6F8FF7" stroke-opacity=".38"/><text class="ex-mono" x="470.5" y="331" text-anchor="middle" font-size="11.5" fill="#B9CBFF">Telegram</text></g>
+      <text class="ex-mono" x="56" y="72" font-size="12" letter-spacing="2.6" fill="#6F8FF7">EXPERIENCE · MEEVICK ENTERPRISES · JUN – JUL 2026</text>
+      <text class="ex-serif" x="54" y="146" font-size="52" font-weight="300" letter-spacing="-1.5" fill="#EEF2FF">Trading Engine<tspan class="ex-serif" font-size="22" font-style="italic" fill="#B9CBFF" dx="14">Python Engineering Intern</tspan></text>
+      <text class="ex-sans" x="56" y="196" font-size="17" fill="#A5AFCB">A 24/7 breakout engine for NSE equities, gated by a sector-index vote.</text>
+      <text class="ex-mono" x="56" y="238" font-size="12.5" fill="#B9CBFF"><tspan fill="#6F8FF7">BUILT ›</tspan> Upstox REST behind a self-healing 401 replay · rate limits</text>
+      <line class="ex-draw" x1="56" y1="272" x2="640" y2="272" stroke="#6F8FF7" stroke-opacity=".32"/>
+    <g transform="translate(56 330)"><text class="ex-serif" font-size="36" font-weight="300" fill="#EEF2FF">18</text><text class="ex-sans" y="32" font-size="13" fill="#A5AFCB">rung trailing stop-loss</text></g>
+    <g transform="translate(261 330)"><text class="ex-serif" font-size="36" font-weight="300" fill="#EEF2FF">₹3,000</text><text class="ex-sans" y="32" font-size="13" fill="#A5AFCB">hard stop, never breached</text></g>
+    <g transform="translate(466 330)"><text class="ex-serif" font-size="36" font-weight="300" fill="#EEF2FF">24/7</text><text class="ex-sans" y="32" font-size="13" fill="#A5AFCB">on AWS EC2 with cron</text></g>
+      <g class="ex-chip" style="animation-delay:1.00s"><rect x="56" y="402" width="63" height="26" rx="13" fill="#111D4A" stroke="#6F8FF7" stroke-opacity=".38"/><text class="ex-mono" x="87.5" y="419" text-anchor="middle" font-size="11.5" fill="#B9CBFF">Python</text></g><g class="ex-chip" style="animation-delay:1.12s"><rect x="127" y="402" width="63" height="26" rx="13" fill="#111D4A" stroke="#6F8FF7" stroke-opacity=".38"/><text class="ex-mono" x="158.5" y="419" text-anchor="middle" font-size="11.5" fill="#B9CBFF">Pandas</text></g><g class="ex-chip" style="animation-delay:1.24s"><rect x="198" y="402" width="91" height="26" rx="13" fill="#111D4A" stroke="#6F8FF7" stroke-opacity=".38"/><text class="ex-mono" x="243.5" y="419" text-anchor="middle" font-size="11.5" fill="#B9CBFF">Upstox API</text></g><g class="ex-chip" style="animation-delay:1.36s"><rect x="297" y="402" width="70" height="26" rx="13" fill="#111D4A" stroke="#6F8FF7" stroke-opacity=".38"/><text class="ex-mono" x="332" y="419" text-anchor="middle" font-size="11.5" fill="#B9CBFF">AWS EC2</text></g><g class="ex-chip" style="animation-delay:1.48s"><rect x="375" y="402" width="49" height="26" rx="13" fill="#111D4A" stroke="#6F8FF7" stroke-opacity=".38"/><text class="ex-mono" x="399.5" y="419" text-anchor="middle" font-size="11.5" fill="#B9CBFF">cron</text></g><g class="ex-chip" style="animation-delay:1.60s"><rect x="432" y="402" width="77" height="26" rx="13" fill="#111D4A" stroke="#6F8FF7" stroke-opacity=".38"/><text class="ex-mono" x="470.5" y="419" text-anchor="middle" font-size="11.5" fill="#B9CBFF">Telegram</text></g>
     </g>
-    <g class="ex-in ex-d2">
+    <g class="ex-in ex-d2"><g transform="translate(-235.2 2.4) scale(1.2)">
       <g class="ex-mono">
         <text x="772" y="92" font-size="10.5" letter-spacing="2.4" fill="#A5AFCB">NSE · 10 STOCKS · 5 INDICES</text>
         <text x="1100" y="92" font-size="10" letter-spacing="1.4" fill="#B9CBFF" text-anchor="end">SECTOR VOTE</text><circle cx="1110" cy="88" r="4" fill="#B9CBFF" stroke="#B9CBFF" stroke-opacity=".7"/><circle cx="1123" cy="88" r="4" fill="#B9CBFF" stroke="#B9CBFF" stroke-opacity=".7"/><circle cx="1136" cy="88" r="4" fill="#B9CBFF" stroke="#B9CBFF" stroke-opacity=".7"/><circle cx="1149" cy="88" r="4" fill="#B9CBFF" stroke="#B9CBFF" stroke-opacity=".7"/><circle cx="1162" cy="88" r="4" fill="none" stroke="#B9CBFF" stroke-opacity=".7"/>
@@ -73,8 +73,8 @@
         </circle>
         <text x="772" y="326" font-size="10.5" letter-spacing="1.5" fill="#A5AFCB">paper-traded on live prices · Telegram alerts</text>
       </g>
-    </g>
-    <rect x=".5" y=".5" width="1199" height="369" rx="17.5" fill="none" stroke="#6F8FF7" stroke-opacity=".22"/>
-    <rect class="ex-trace" style="animation-delay:0.0s" x=".5" y=".5" width="1199" height="369" rx="17.5" fill="none" stroke="url(#ex-trace)" stroke-width="1.6" stroke-linecap="round"/>
+    </g></g>
+    <rect x=".5" y=".5" width="1199" height="479" rx="17.5" fill="none" stroke="#6F8FF7" stroke-opacity=".22"/>
+    <rect class="ex-trace" style="animation-delay:0.0s" x=".5" y=".5" width="1199" height="479" rx="17.5" fill="none" stroke="url(#ex-trace)" stroke-width="1.6" stroke-linecap="round"/>
   </g>
 </svg>

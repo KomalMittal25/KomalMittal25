@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="1200" height="420" role="img" aria-labelledby="ce-t ce-d">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" width="1200" height="500" role="img" aria-labelledby="ce-t ce-d">
   <title id="ce-t">Education</title>
   <desc id="ce-d">B.Tech in Information Technology, Bhagwan Parshuram Institute of Technology, New Delhi, 2023 to 2027, CGPA 9.32. CBSE Class XII 84.6% (2023) and Class X 94.4% (2021), ASN Senior Secondary School, New Delhi. Coursework: data structures and algorithms in C++, OOPS, operating systems, DBMS, distributed systems, unit testing.</desc>
   <defs>
@@ -19,72 +19,72 @@
     @keyframes ce-fill { from { transform: scaleX(0); } to { transform: none; } }
     @media (prefers-reduced-motion: reduce) { .ce-tile, .ce-fill { animation: none; } .ce-edge { display: none; } }
   </style>
-  <rect width="1200" height="420" rx="20" fill="url(#ce-bg)"/>
-  <rect width="1200" height="420" rx="20" fill="url(#ce-glow)"/>
-  <rect x=".5" y=".5" width="1199" height="419" rx="19.5" fill="none" stroke="#6F8FF7" stroke-opacity=".18"/>
+  <rect width="1200" height="500" rx="20" fill="url(#ce-bg)"/>
+  <rect width="1200" height="500" rx="20" fill="url(#ce-glow)"/>
+  <rect x=".5" y=".5" width="1199" height="499" rx="19.5" fill="none" stroke="#6F8FF7" stroke-opacity=".18"/>
   <g class="ce-tile" style="animation-delay:0.20s"><g transform="translate(40 40)">
-    <rect width="560" height="170" rx="14" fill="#0B1230" stroke="#6F8FF7" stroke-opacity=".26"/>
-    <rect width="560" height="170" rx="14" fill="none" stroke="url(#ce-edge)" stroke-width="1.2" class="ce-edge" style="stroke-dasharray:1460;stroke-dashoffset:1460;animation-delay:2.00s"/>
-    <text class="ce-mono" x="22" y="36" font-size="11.5" letter-spacing="2.6" fill="#6F8FF7">B.TECH · INFORMATION TECHNOLOGY</text>
-    <circle cx="533" cy="31" r="3.5" fill="#6F8FF7"/><circle cx="522" cy="31" r="3.5" fill="#6F8FF7"/><circle cx="511" cy="31" r="3.5" fill="#6F8FF7"/><circle cx="500" cy="31" r="3.5" fill="#6F8FF7"/>
-    <line x1="22" y1="54" x2="538" y2="54" stroke="#6F8FF7" stroke-opacity=".16"/>
-    <text class="ce-serif" x="22" y="118" font-size="56" font-weight="300" fill="#EEF2FF">9.32</text>
-    <text class="ce-mono" x="146" y="96" font-size="11" letter-spacing="2" fill="#B9CBFF">CGPA / 10</text>
-    <text class="ce-sans" x="146" y="118" font-size="14" fill="#EEF2FF">Bhagwan Parshuram Institute of Technology</text>
-    <rect x="22" y="138" width="516" height="5" rx="2.5" fill="#111D4A"/>
-    <rect x="22" y="138" width="481" height="5" rx="2.5" fill="url(#ce-bar)" class="ce-fill"/>
-    <text class="ce-mono" x="538" y="160" font-size="10" letter-spacing="1.4" fill="#A5AFCB" text-anchor="end">NEW DELHI · 2023 – 2027</text>
+    <rect width="560" height="214" rx="14" fill="#0B1230" stroke="#6F8FF7" stroke-opacity=".26"/>
+    <rect width="560" height="214" rx="14" fill="none" stroke="url(#ce-edge)" stroke-width="1.2" class="ce-edge" style="stroke-dasharray:1548;stroke-dashoffset:1548;animation-delay:2.00s"/>
+    <text class="ce-mono" x="24" y="38" font-size="11.5" letter-spacing="2.6" fill="#6F8FF7">B.TECH · INFORMATION TECHNOLOGY</text>
+    <circle cx="533" cy="33" r="3.5" fill="#6F8FF7"/><circle cx="522" cy="33" r="3.5" fill="#6F8FF7"/><circle cx="511" cy="33" r="3.5" fill="#6F8FF7"/><circle cx="500" cy="33" r="3.5" fill="#6F8FF7"/>
+    <line x1="24" y1="60" x2="536" y2="60" stroke="#6F8FF7" stroke-opacity=".16"/>
+    <text class="ce-serif" x="24" y="136" font-size="58" font-weight="300" fill="#EEF2FF">9.32</text>
+    <text class="ce-mono" x="152" y="108" font-size="11" letter-spacing="2" fill="#B9CBFF">CGPA / 10</text>
+    <text class="ce-sans" x="152" y="134" font-size="14.5" fill="#EEF2FF">Bhagwan Parshuram Institute of Technology</text>
+    <rect x="24" y="162" width="512" height="5" rx="2.5" fill="#111D4A"/>
+    <rect x="24" y="162" width="477" height="5" rx="2.5" fill="url(#ce-bar)" class="ce-fill"/>
+    <text class="ce-mono" x="536" y="192" font-size="10.5" letter-spacing="1.6" fill="#A5AFCB" text-anchor="end">NEW DELHI · 2023 – 2027</text>
   </g></g>
   <g class="ce-tile" style="animation-delay:0.32s"><g transform="translate(620 40)">
-    <rect width="260" height="170" rx="14" fill="#0B1230" stroke="#6F8FF7" stroke-opacity=".26"/>
-    <rect width="260" height="170" rx="14" fill="none" stroke="url(#ce-edge)" stroke-width="1.2" class="ce-edge" style="stroke-dasharray:860;stroke-dashoffset:860;animation-delay:2.35s"/>
-    <text class="ce-mono" x="22" y="36" font-size="11.5" letter-spacing="2.6" fill="#6F8FF7">CBSE CLASS XII</text>
-    <circle cx="233" cy="31" r="3.5" fill="#6F8FF7"/><circle cx="222" cy="31" r="3.5" fill="#6F8FF7"/>
-    <line x1="22" y1="54" x2="238" y2="54" stroke="#6F8FF7" stroke-opacity=".16"/>
-    <text class="ce-serif" x="22" y="112" font-size="44" font-weight="300" fill="#EEF2FF">84.6%</text>
-    <text class="ce-sans" x="22" y="138" font-size="13" fill="#A5AFCB">ASN Senior Secondary School</text>
-    <text class="ce-mono" x="22" y="158" font-size="10" letter-spacing="1.4" fill="#A5AFCB">NEW DELHI · 2023</text>
+    <rect width="260" height="214" rx="14" fill="#0B1230" stroke="#6F8FF7" stroke-opacity=".26"/>
+    <rect width="260" height="214" rx="14" fill="none" stroke="url(#ce-edge)" stroke-width="1.2" class="ce-edge" style="stroke-dasharray:948;stroke-dashoffset:948;animation-delay:2.35s"/>
+    <text class="ce-mono" x="24" y="38" font-size="11.5" letter-spacing="2.6" fill="#6F8FF7">CBSE CLASS XII</text>
+    <circle cx="233" cy="33" r="3.5" fill="#6F8FF7"/><circle cx="222" cy="33" r="3.5" fill="#6F8FF7"/>
+    <line x1="24" y1="60" x2="236" y2="60" stroke="#6F8FF7" stroke-opacity=".16"/>
+    <text class="ce-serif" x="24" y="126" font-size="46" font-weight="300" fill="#EEF2FF">84.6%</text>
+    <text class="ce-sans" x="24" y="160" font-size="13.5" fill="#A5AFCB">ASN Senior Secondary School</text>
+    <text class="ce-mono" x="24" y="186" font-size="10.5" letter-spacing="1.6" fill="#A5AFCB">NEW DELHI · 2023</text>
   </g></g>
   <g class="ce-tile" style="animation-delay:0.44s"><g transform="translate(900 40)">
-    <rect width="260" height="170" rx="14" fill="#0B1230" stroke="#6F8FF7" stroke-opacity=".26"/>
-    <rect width="260" height="170" rx="14" fill="none" stroke="url(#ce-edge)" stroke-width="1.2" class="ce-edge" style="stroke-dasharray:860;stroke-dashoffset:860;animation-delay:2.70s"/>
-    <text class="ce-mono" x="22" y="36" font-size="11.5" letter-spacing="2.6" fill="#6F8FF7">CBSE CLASS X</text>
-    <circle cx="233" cy="31" r="3.5" fill="#6F8FF7"/><circle cx="222" cy="31" r="3.5" fill="#6F8FF7"/>
-    <line x1="22" y1="54" x2="238" y2="54" stroke="#6F8FF7" stroke-opacity=".16"/>
-    <text class="ce-serif" x="22" y="112" font-size="44" font-weight="300" fill="#EEF2FF">94.4%</text>
-    <text class="ce-sans" x="22" y="138" font-size="13" fill="#A5AFCB">ASN Senior Secondary School</text>
-    <text class="ce-mono" x="22" y="158" font-size="10" letter-spacing="1.4" fill="#A5AFCB">NEW DELHI · 2021</text>
+    <rect width="260" height="214" rx="14" fill="#0B1230" stroke="#6F8FF7" stroke-opacity=".26"/>
+    <rect width="260" height="214" rx="14" fill="none" stroke="url(#ce-edge)" stroke-width="1.2" class="ce-edge" style="stroke-dasharray:948;stroke-dashoffset:948;animation-delay:2.70s"/>
+    <text class="ce-mono" x="24" y="38" font-size="11.5" letter-spacing="2.6" fill="#6F8FF7">CBSE CLASS X</text>
+    <circle cx="233" cy="33" r="3.5" fill="#6F8FF7"/><circle cx="222" cy="33" r="3.5" fill="#6F8FF7"/>
+    <line x1="24" y1="60" x2="236" y2="60" stroke="#6F8FF7" stroke-opacity=".16"/>
+    <text class="ce-serif" x="24" y="126" font-size="46" font-weight="300" fill="#EEF2FF">94.4%</text>
+    <text class="ce-sans" x="24" y="160" font-size="13.5" fill="#A5AFCB">ASN Senior Secondary School</text>
+    <text class="ce-mono" x="24" y="186" font-size="10.5" letter-spacing="1.6" fill="#A5AFCB">NEW DELHI · 2021</text>
   </g></g>
-  <g class="ce-tile" style="animation-delay:0.56s"><g transform="translate(40 230)">
-    <rect width="265" height="150" rx="14" fill="#0B1230" stroke="#6F8FF7" stroke-opacity=".26"/>
-    <rect width="265" height="150" rx="14" fill="none" stroke="url(#ce-edge)" stroke-width="1.2" class="ce-edge" style="stroke-dasharray:830;stroke-dashoffset:830;animation-delay:3.05s"/>
-    <text class="ce-mono" x="22" y="36" font-size="11.5" letter-spacing="2.6" fill="#6F8FF7">CORE CS</text>
-    <circle cx="238" cy="31" r="3.5" fill="#6F8FF7"/><circle cx="227" cy="31" r="3.5" fill="#6F8FF7"/><circle cx="216" cy="31" r="3.5" fill="#6F8FF7"/>
-    <line x1="22" y1="54" x2="243" y2="54" stroke="#6F8FF7" stroke-opacity=".16"/>
-    <text class="ce-sans" x="22" y="86" font-size="14" fill="#EEF2FF">Data Structures &amp;</text><text class="ce-sans" x="22" y="108" font-size="14" fill="#EEF2FF">Algorithms in C++</text><text class="ce-sans" x="22" y="130" font-size="14" fill="#B9CBFF">OOPS</text>
+  <g class="ce-tile" style="animation-delay:0.56s"><g transform="translate(40 274)">
+    <rect width="265" height="186" rx="14" fill="#0B1230" stroke="#6F8FF7" stroke-opacity=".26"/>
+    <rect width="265" height="186" rx="14" fill="none" stroke="url(#ce-edge)" stroke-width="1.2" class="ce-edge" style="stroke-dasharray:902;stroke-dashoffset:902;animation-delay:3.05s"/>
+    <text class="ce-mono" x="24" y="38" font-size="11.5" letter-spacing="2.6" fill="#6F8FF7">CORE CS</text>
+    <circle cx="238" cy="33" r="3.5" fill="#6F8FF7"/><circle cx="227" cy="33" r="3.5" fill="#6F8FF7"/><circle cx="216" cy="33" r="3.5" fill="#6F8FF7"/>
+    <line x1="24" y1="60" x2="241" y2="60" stroke="#6F8FF7" stroke-opacity=".16"/>
+    <text class="ce-sans" x="24" y="98" font-size="14.5" fill="#EEF2FF">Data Structures &amp;</text><text class="ce-sans" x="24" y="128" font-size="14.5" fill="#EEF2FF">Algorithms in C++</text><text class="ce-sans" x="24" y="158" font-size="14.5" fill="#B9CBFF">OOPS</text>
   </g></g>
-  <g class="ce-tile" style="animation-delay:0.68s"><g transform="translate(325 230)">
-    <rect width="265" height="150" rx="14" fill="#0B1230" stroke="#6F8FF7" stroke-opacity=".26"/>
-    <rect width="265" height="150" rx="14" fill="none" stroke="url(#ce-edge)" stroke-width="1.2" class="ce-edge" style="stroke-dasharray:830;stroke-dashoffset:830;animation-delay:3.40s"/>
-    <text class="ce-mono" x="22" y="36" font-size="11.5" letter-spacing="2.6" fill="#6F8FF7">SYSTEMS</text>
-    <circle cx="238" cy="31" r="3.5" fill="#6F8FF7"/><circle cx="227" cy="31" r="3.5" fill="#6F8FF7"/>
-    <line x1="22" y1="54" x2="243" y2="54" stroke="#6F8FF7" stroke-opacity=".16"/>
-    <text class="ce-sans" x="22" y="86" font-size="14" fill="#EEF2FF">Operating Systems</text><text class="ce-sans" x="22" y="108" font-size="14" fill="#EEF2FF">DBMS</text><text class="ce-sans" x="22" y="130" font-size="14" fill="#B9CBFF">Distributed Systems</text>
+  <g class="ce-tile" style="animation-delay:0.68s"><g transform="translate(325 274)">
+    <rect width="265" height="186" rx="14" fill="#0B1230" stroke="#6F8FF7" stroke-opacity=".26"/>
+    <rect width="265" height="186" rx="14" fill="none" stroke="url(#ce-edge)" stroke-width="1.2" class="ce-edge" style="stroke-dasharray:902;stroke-dashoffset:902;animation-delay:3.40s"/>
+    <text class="ce-mono" x="24" y="38" font-size="11.5" letter-spacing="2.6" fill="#6F8FF7">SYSTEMS</text>
+    <circle cx="238" cy="33" r="3.5" fill="#6F8FF7"/><circle cx="227" cy="33" r="3.5" fill="#6F8FF7"/>
+    <line x1="24" y1="60" x2="241" y2="60" stroke="#6F8FF7" stroke-opacity=".16"/>
+    <text class="ce-sans" x="24" y="98" font-size="14.5" fill="#EEF2FF">Operating Systems</text><text class="ce-sans" x="24" y="128" font-size="14.5" fill="#EEF2FF">DBMS</text><text class="ce-sans" x="24" y="158" font-size="14.5" fill="#B9CBFF">Distributed Systems</text>
   </g></g>
-  <g class="ce-tile" style="animation-delay:0.80s"><g transform="translate(610 230)">
-    <rect width="265" height="150" rx="14" fill="#0B1230" stroke="#6F8FF7" stroke-opacity=".26"/>
-    <rect width="265" height="150" rx="14" fill="none" stroke="url(#ce-edge)" stroke-width="1.2" class="ce-edge" style="stroke-dasharray:830;stroke-dashoffset:830;animation-delay:3.75s"/>
-    <text class="ce-mono" x="22" y="36" font-size="11.5" letter-spacing="2.6" fill="#6F8FF7">ENGINEERING</text>
-    <circle cx="238" cy="31" r="3.5" fill="#6F8FF7"/><circle cx="227" cy="31" r="3.5" fill="#6F8FF7"/>
-    <line x1="22" y1="54" x2="243" y2="54" stroke="#6F8FF7" stroke-opacity=".16"/>
-    <text class="ce-sans" x="22" y="86" font-size="14" fill="#EEF2FF">Unit Testing</text><text class="ce-sans" x="22" y="108" font-size="14" fill="#EEF2FF">REST APIs · OAuth 2.0</text><text class="ce-sans" x="22" y="130" font-size="14" fill="#B9CBFF">JWT authentication</text>
+  <g class="ce-tile" style="animation-delay:0.80s"><g transform="translate(610 274)">
+    <rect width="265" height="186" rx="14" fill="#0B1230" stroke="#6F8FF7" stroke-opacity=".26"/>
+    <rect width="265" height="186" rx="14" fill="none" stroke="url(#ce-edge)" stroke-width="1.2" class="ce-edge" style="stroke-dasharray:902;stroke-dashoffset:902;animation-delay:3.75s"/>
+    <text class="ce-mono" x="24" y="38" font-size="11.5" letter-spacing="2.6" fill="#6F8FF7">ENGINEERING</text>
+    <circle cx="238" cy="33" r="3.5" fill="#6F8FF7"/><circle cx="227" cy="33" r="3.5" fill="#6F8FF7"/>
+    <line x1="24" y1="60" x2="241" y2="60" stroke="#6F8FF7" stroke-opacity=".16"/>
+    <text class="ce-sans" x="24" y="98" font-size="14.5" fill="#EEF2FF">Unit Testing</text><text class="ce-sans" x="24" y="128" font-size="14.5" fill="#EEF2FF">REST APIs · OAuth 2.0</text><text class="ce-sans" x="24" y="158" font-size="14.5" fill="#B9CBFF">JWT authentication</text>
   </g></g>
-  <g class="ce-tile" style="animation-delay:0.92s"><g transform="translate(895 230)">
-    <rect width="265" height="150" rx="14" fill="#0B1230" stroke="#6F8FF7" stroke-opacity=".26"/>
-    <rect width="265" height="150" rx="14" fill="none" stroke="url(#ce-edge)" stroke-width="1.2" class="ce-edge" style="stroke-dasharray:830;stroke-dashoffset:830;animation-delay:4.10s"/>
-    <text class="ce-mono" x="22" y="36" font-size="11.5" letter-spacing="2.6" fill="#6F8FF7">ALWAYS LEARNING</text>
-    <circle cx="238" cy="31" r="3.5" fill="#6F8FF7"/>
-    <line x1="22" y1="54" x2="243" y2="54" stroke="#6F8FF7" stroke-opacity=".16"/>
-    <text class="ce-sans" x="22" y="86" font-size="14" fill="#EEF2FF">Agentic AI for Bharat —</text><text class="ce-sans" x="22" y="108" font-size="14" fill="#EEF2FF">7-day national build</text><text class="ce-sans" x="22" y="130" font-size="14" fill="#B9CBFF">Meesho ScriptedBy{Her}</text>
+  <g class="ce-tile" style="animation-delay:0.92s"><g transform="translate(895 274)">
+    <rect width="265" height="186" rx="14" fill="#0B1230" stroke="#6F8FF7" stroke-opacity=".26"/>
+    <rect width="265" height="186" rx="14" fill="none" stroke="url(#ce-edge)" stroke-width="1.2" class="ce-edge" style="stroke-dasharray:902;stroke-dashoffset:902;animation-delay:4.10s"/>
+    <text class="ce-mono" x="24" y="38" font-size="11.5" letter-spacing="2.6" fill="#6F8FF7">ALWAYS LEARNING</text>
+    <circle cx="238" cy="33" r="3.5" fill="#6F8FF7"/>
+    <line x1="24" y1="60" x2="241" y2="60" stroke="#6F8FF7" stroke-opacity=".16"/>
+    <text class="ce-sans" x="24" y="98" font-size="14.5" fill="#EEF2FF">Agentic AI for Bharat —</text><text class="ce-sans" x="24" y="128" font-size="14.5" fill="#EEF2FF">7-day national build</text><text class="ce-sans" x="24" y="158" font-size="14.5" fill="#B9CBFF">Meesho ScriptedBy{Her}</text>
   </g></g>
 </svg>

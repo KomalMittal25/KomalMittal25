@@ -362,7 +362,7 @@ def about():
     clips, rows = [], []
     t = 0.6
     for i, (cmd, out) in enumerate(lines):
-        y_cmd, y_out = 128 + i * 50, 153 + i * 50
+        y_cmd, y_out = 128 + i * 58, 156 + i * 58
         w_cmd = round(26 + len(cmd) * 8.6 + 8)
         w_out = round(26 + len(out) * 8.3 + 10)
         d_cmd = round(0.09 + len(cmd) * 0.028, 2)
@@ -373,24 +373,26 @@ def about():
         rows.append(f'      <g clip-path="url(#ab-c{2*i})"><text x="72" y="{y_cmd}" fill="{ACC}">$</text><text x="94" y="{y_cmd}" fill="{TEXT}">{esc(cmd)}</text></g>')
         rows.append(f'      <g clip-path="url(#ab-c{2*i+1})"><text x="72" y="{y_out}" fill="{ROYAL}">→</text><text x="94" y="{y_out}" fill="{MUTE}">{esc(out)}</text></g>')
 
+    # The three things I've built, one card each
     cards = [
-        ("PRIMARY LANGUAGE", "Python", "agents · FastAPI · trading engine"),
-        ("SYSTEMS IN", "TypeScript", "Node.js · BullMQ · Redis locks"),
-        ("DRAWN TO", "Agentic AI", "LangGraph · RAG · Hindi voice"),
+        ("01", "INTERNSHIP · MEEVICK", "Trading Engine", "24/7 NSE breakouts · 18-rung trailing SL"),
+        ("02", "AGENTIC AI · TOP 50", "Sakhi", "Hindi voice co-pilot · 4 specialist agents"),
+        ("03", "DISTRIBUTED SYSTEMS", "Tickless", "Zero-cron email scheduler · Redis locks"),
     ]
-    card_svg = "\n".join(f"""    <g class="ab-card" style="animation-delay:{1.2 + k * .5:.1f}s"><g transform="translate(836 {70 + k * 104})">
-      <rect width="324" height="88" rx="14" fill="{BG}" stroke="{ACC}" stroke-opacity=".3"/>
-      <rect x="0" y="0" width="3" height="88" rx="1.5" fill="{ACC}"/>
-      <text class="ab-mono" x="22" y="26" font-size="10" letter-spacing="2" fill="{ACC}">{lab}</text>
-      <text class="ab-serif" x="22" y="58" font-size="28" font-weight="300" fill="{TEXT}">{big}</text>
-      <text class="ab-sans" x="22" y="78" font-size="12" fill="{MUTE}">{esc(sub)}</text>
-    </g></g>""" for k, (lab, big, sub) in enumerate(cards))
+    card_svg = "\n".join(f"""    <g class="ab-card" style="animation-delay:{1.2 + k * .5:.1f}s"><g transform="translate(836 {40 + k * 132})">
+      <rect width="324" height="116" rx="14" fill="{BG}" stroke="{ACC}" stroke-opacity=".3"/>
+      <rect x="0" y="18" width="3" height="80" rx="1.5" fill="{ACC}"/>
+      <text class="ab-mono" x="24" y="32" font-size="10" letter-spacing="2" fill="{ACC}">{esc(lab)}</text>
+      <text class="ab-mono" x="300" y="32" font-size="10" letter-spacing="1.5" fill="{MUTE}" text-anchor="end">{num}</text>
+      <text class="ab-serif" x="24" y="70" font-size="28" font-weight="300" fill="{TEXT}">{esc(big)}</text>
+      <text class="ab-sans" x="24" y="100" font-size="12.5" fill="{MUTE}">{esc(sub)}</text>
+    </g></g>""" for k, (num, lab, big, sub) in enumerate(cards))
 
     nl = "\n"
     return f"""
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="1200" height="420" role="img" aria-labelledby="ab-t ab-d">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 460" width="1200" height="460" role="img" aria-labelledby="ab-t ab-d">
   <title id="ab-t">About Komal Mittal</title>
-  <desc id="ab-d">Python and AI engineer and backend developer. B.Tech in Information Technology at Bhagwan Parshuram Institute of Technology, New Delhi, CGPA 9.32. Python Engineering Intern at Meevick Enterprises, June to July 2026. Shipped Sakhi, Tickless and an NSE opening-range-breakout trading engine. Primary language Python; systems work in TypeScript; drawn to agentic AI.</desc>
+  <desc id="ab-d">Python and AI engineer and backend developer. B.Tech in Information Technology at Bhagwan Parshuram Institute of Technology, New Delhi, CGPA 9.32. Python Engineering Intern at Meevick Enterprises, June to July 2026. Three builds: an NSE trading engine with an 18-rung trailing stop-loss, Sakhi, a Hindi voice co-pilot with 4 specialist agents, and Tickless, a zero-cron email scheduler with Redis locks.</desc>
   <defs>
     <linearGradient id="ab-bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="{BG}"/><stop offset="1" stop-color="{DEEP}"/></linearGradient>
     <radialGradient id="ab-glow" cx="80%" cy="20%" r="70%"><stop offset="0" stop-color="{GLOW}" stop-opacity=".5"/><stop offset="1" stop-color="{MDEEP}" stop-opacity="0"/></radialGradient>
@@ -407,14 +409,14 @@ def about():
     @keyframes ab-fade {{ from {{ opacity: 0; }} to {{ opacity: 1; }} }}
     @media (prefers-reduced-motion: reduce) {{ .ab-type, .ab-card, .ab-fade {{ animation: none; }} }}
   </style>
-  <rect width="1200" height="420" rx="20" fill="url(#ab-bg)"/>
-  <rect width="1200" height="420" rx="20" fill="url(#ab-glow)"/>
-  <rect x=".5" y=".5" width="1199" height="419" rx="19.5" fill="none" stroke="{ACC}" stroke-opacity=".18"/>
+  <rect width="1200" height="460" rx="20" fill="url(#ab-bg)"/>
+  <rect width="1200" height="460" rx="20" fill="url(#ab-glow)"/>
+  <rect x=".5" y=".5" width="1199" height="459" rx="19.5" fill="none" stroke="{ACC}" stroke-opacity=".18"/>
 
   <!-- Terminal window -->
   <g class="ab-fade">
-    <rect x="40" y="40" width="760" height="340" rx="14" fill="{DEEP}" stroke="{ACC}" stroke-opacity=".32"/>
-    <rect x="40" y="40" width="760" height="340" rx="14" fill="url(#ab-scan)"/>
+    <rect x="40" y="40" width="760" height="380" rx="14" fill="{DEEP}" stroke="{ACC}" stroke-opacity=".32"/>
+    <rect x="40" y="40" width="760" height="380" rx="14" fill="url(#ab-scan)"/>
     <path d="M40 54 a14 14 0 0 1 14 -14 H786 a14 14 0 0 1 14 14 V76 H40 Z" fill="{BG}"/>
     <line x1="40" y1="76" x2="800" y2="76" stroke="{ACC}" stroke-opacity=".22"/>
     <circle cx="62" cy="58" r="5" fill="{ROYAL}"/><circle cx="80" cy="58" r="5" fill="{MDEEP}"/><circle cx="98" cy="58" r="5" fill="{MDEEP}"/>
@@ -423,7 +425,7 @@ def about():
   <g class="ab-mono" font-size="13.5">
 {nl.join(rows)}
   </g>
-  <rect x="72" y="364" width="8" height="16" fill="{LIGHT}" class="ab-fade" style="animation-delay:{t:.1f}s">
+  <rect x="72" y="396" width="8" height="16" fill="{LIGHT}" class="ab-fade" style="animation-delay:{t:.1f}s">
     <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;.5;.5;1" dur="1.1s" repeatCount="indefinite"/>
   </rect>
 
@@ -443,12 +445,12 @@ def recognition():
     strip_svg = "\n".join(f"""    <g transform="translate({36 + k * 230} 300)">
       <circle cx="0" cy="0" r="3.5" fill="{LIGHT}"/>
       <text class="ach-mono" y="34" font-size="11" letter-spacing="2" fill="{ACC}">{esc(lab)}</text>
-      <text class="ach-serif" y="78" font-size="40" font-weight="300" fill="{TEXT}">{esc(big)}</text>
-      <text y="102">{esc(sub)}</text>
+      <text class="ach-serif" y="80" font-size="40" font-weight="300" fill="{TEXT}">{esc(big)}</text>
+      <text y="114">{esc(sub)}</text>
     </g>""" for k, (lab, big, sub) in enumerate(strip))
 
     return f"""
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 430" width="1200" height="430" role="img" aria-labelledby="ach-title ach-desc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 450" width="1200" height="450" role="img" aria-labelledby="ach-title ach-desc">
   <title id="ach-title">Recognition</title>
   <desc id="ach-desc">Meesho ScriptedBy Her 2.0 National Semi-Finalist, ranked Top 50 among 36,000+ women developers. Flipkart GRiD 8.0 Semi-Finalist among 165,000+ applicants. CGPA 9.32. Sakhi: 11-node LangGraph with 4 specialist agents. Tickless: 60+ Vitest unit tests.</desc>
 
@@ -505,15 +507,15 @@ def recognition():
     @media (prefers-reduced-motion: reduce) {{ .ach-trace-a, .ach-trace-b {{ display: none; }} }}
   </style>
 
-  <rect width="1200" height="430" rx="20" fill="url(#ach-bg)"/>
-  <rect x=".5" y=".5" width="1199" height="429" rx="19.5" fill="none" stroke="{ACC}" stroke-opacity=".18"/>
+  <rect width="1200" height="450" rx="20" fill="url(#ach-bg)"/>
+  <rect x=".5" y=".5" width="1199" height="449" rx="19.5" fill="none" stroke="{ACC}" stroke-opacity=".18"/>
 
   <!-- Meesho ScriptedBy{{Her}} 2.0 — hero card -->
   <g class="ach-in a1"><g transform="translate(24 24)">
     <g clip-path="url(#ach-clip-a)">
       <rect width="690" height="250" fill="{BG}"/>
       <rect width="690" height="250" fill="url(#ach-glow-a)"/>
-      <text class="ach-serif" x="672" y="124" text-anchor="end" font-size="128" font-weight="300" letter-spacing="-6" fill="url(#ach-outline)">Top 50</text>
+      <text class="ach-serif" x="672" y="114" text-anchor="end" font-size="128" font-weight="300" letter-spacing="-6" fill="url(#ach-outline)">Top 50</text>
       <rect x="-300" y="0" width="260" height="250" fill="url(#ach-sheen)" transform="skewX(-18)">
         <animate attributeName="x" values="-300;900;900" keyTimes="0;.35;1" dur="9s" begin="2s" repeatCount="indefinite"/>
       </rect>
@@ -521,9 +523,9 @@ def recognition():
     <rect x=".5" y=".5" width="689" height="249" rx="15.5" fill="none" stroke="{ACC}" stroke-opacity=".4"/>
     <rect class="ach-trace-a" x=".5" y=".5" width="689" height="249" rx="15.5" fill="none" stroke="url(#ach-trace)" stroke-width="1.8" stroke-linecap="round"/>
     <rect x="40" y="0" width="300" height="1" fill="url(#ach-hair)"/>
-    <text class="ach-mono" x="36" y="154" font-size="12" letter-spacing="2.6" fill="{ACC}">MEESHO · SCRIPTEDBY{{HER}} 2.0 · AGENTIC AI FOR BHARAT</text>
-    <text class="ach-serif" x="34" y="204" font-size="46" font-weight="300" letter-spacing="-1" fill="{TEXT}">National Semi-Finalist</text>
-    <text class="ach-sans" x="36" y="230" font-size="14" fill="{MUTE}">Top 50 of 36,000+ women developers · India's largest women-only hackathon</text>
+    <text class="ach-mono" x="36" y="138" font-size="12" letter-spacing="2.6" fill="{ACC}">MEESHO · SCRIPTEDBY{{HER}} 2.0 · AGENTIC AI FOR BHARAT</text>
+    <text class="ach-serif" x="34" y="188" font-size="46" font-weight="300" letter-spacing="-1" fill="{TEXT}">National Semi-Finalist</text>
+    <text class="ach-sans" x="36" y="226" font-size="14" fill="{MUTE}">Top 50 of 36,000+ women developers · India's largest women-only hackathon</text>
   </g></g>
 
   <!-- Flipkart GRiD 8.0 -->
@@ -532,14 +534,14 @@ def recognition():
       <g clip-path="url(#ach-clip-b)">
         <rect width="450" height="250" fill="{BG}"/>
         <rect width="450" height="250" fill="url(#ach-glow-b)"/>
-        <text class="ach-serif" x="462" y="132" text-anchor="end" font-size="160" font-style="italic" font-weight="300" letter-spacing="-6" fill="none" stroke="{LIGHT}" stroke-opacity=".3">8.0</text>
+        <text class="ach-serif" x="462" y="122" text-anchor="end" font-size="160" font-style="italic" font-weight="300" letter-spacing="-6" fill="none" stroke="{LIGHT}" stroke-opacity=".3">8.0</text>
       </g>
       <rect x=".5" y=".5" width="449" height="249" rx="15.5" fill="none" stroke="{ACC}" stroke-opacity=".32"/>
       <rect class="ach-trace-b" x=".5" y=".5" width="449" height="249" rx="15.5" fill="none" stroke="url(#ach-trace)" stroke-width="1.8" stroke-linecap="round"/>
       <rect x="40" y="0" width="220" height="1" fill="url(#ach-hair)"/>
-      <text class="ach-mono" x="32" y="154" font-size="12" letter-spacing="2.6" fill="{ACC}">FLIPKART · GRiD 8.0</text>
-      <text class="ach-serif" x="30" y="204" font-size="46" font-weight="300" letter-spacing="-1" fill="{TEXT}">Semi-Finalist</text>
-      <text class="ach-sans" x="32" y="230" font-size="14" fill="{MUTE}">165,000+ applicants · India's largest campus challenge</text>
+      <text class="ach-mono" x="32" y="138" font-size="12" letter-spacing="2.6" fill="{ACC}">FLIPKART · GRiD 8.0</text>
+      <text class="ach-serif" x="30" y="188" font-size="46" font-weight="300" letter-spacing="-1" fill="{TEXT}">Semi-Finalist</text>
+      <text class="ach-sans" x="32" y="226" font-size="14" fill="{MUTE}">165,000+ applicants · India's largest campus challenge</text>
     </g>
   </g></g>
 
@@ -565,19 +567,24 @@ def chips(p, items, x0=56, y=314):
 
 
 def card(p, title_text, eyebrow, name, tag, line, built, stats, chip_list, visual, trace_delay):
+    H = 480
+    per = 2 * (1199 + H - 1)
+    # The side diagram is drawn on a 760–1176 × 66–330 grid; scale it up and centre it in the taller card.
+    S = 1.2
+    tx, ty = 1176 - S * 1176, H / 2 - S * 198
     stats_svg = "\n".join(
-        f'    <g transform="translate({56 + k * 205} 266)"><text class="{p}-serif" font-size="34" font-weight="300" fill="{TEXT}">{esc(big)}</text>'
-        f'<text class="{p}-sans" y="24" font-size="12.5" fill="{MUTE}">{esc(sub)}</text></g>'
+        f'    <g transform="translate({56 + k * 205} 330)"><text class="{p}-serif" font-size="36" font-weight="300" fill="{TEXT}">{esc(big)}</text>'
+        f'<text class="{p}-sans" y="32" font-size="13" fill="{MUTE}">{esc(sub)}</text></g>'
         for k, (big, sub) in enumerate(stats))
     tag_svg = f'<tspan class="{p}-serif" font-size="22" font-style="italic" fill="{LIGHT}" dx="14">{esc(tag)}</tspan>' if tag else ""
     return f"""
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 370" width="1200" height="370" role="img" aria-labelledby="{p}-t">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 {H}" width="1200" height="{H}" role="img" aria-labelledby="{p}-t">
   <title id="{p}-t">{esc(title_text)}</title>
   <defs>
     <linearGradient id="{p}-bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="{BG}"/><stop offset="1" stop-color="{DEEP}"/>
     </linearGradient>
-    <radialGradient id="{p}-glow" cx="82%" cy="30%" r="55%">
+    <radialGradient id="{p}-glow" cx="80%" cy="38%" r="55%">
       <stop offset="0" stop-color="{GLOW}" stop-opacity=".55"/><stop offset="1" stop-color="{MDEEP}" stop-opacity="0"/>
     </radialGradient>
     <pattern id="{p}-grid" width="28" height="28" patternUnits="userSpaceOnUse">
@@ -586,7 +593,7 @@ def card(p, title_text, eyebrow, name, tag, line, built, stats, chip_list, visua
     <filter id="{p}-glowf" x="-50%" y="-50%" width="200%" height="200%">
       <feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
-    <clipPath id="{p}-clip"><rect width="1200" height="370" rx="18"/></clipPath>
+    <clipPath id="{p}-clip"><rect width="1200" height="{H}" rx="18"/></clipPath>
     <linearGradient id="{p}-trace" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="{TEXT}"/><stop offset=".45" stop-color="{LIGHT}"/><stop offset="1" stop-color="{ACC}" stop-opacity="0"/>
     </linearGradient>
@@ -605,28 +612,28 @@ def card(p, title_text, eyebrow, name, tag, line, built, stats, chip_list, visua
     @keyframes {p}-draw {{ to {{ stroke-dashoffset: 0; }} }}
     @keyframes {p}-bar {{ from {{ transform: scaleY(.25); }} to {{ transform: scaleY(1); }} }}
     @media (prefers-reduced-motion: reduce) {{ .{p}-in, .{p}-chip, .{p}-pop, .{p}-bar {{ animation: none; }} .{p}-draw, .{p}-draw-late {{ animation: none; stroke-dashoffset: 0; }} }}
-    .{p}-trace {{ stroke-dasharray: 564 3136; stroke-dashoffset: 3700; animation: {p}-trace 7s linear infinite; }}
+    .{p}-trace {{ stroke-dasharray: 564 {per - 564}; stroke-dashoffset: {per}; animation: {p}-trace 7s linear infinite; }}
     @keyframes {p}-trace {{ to {{ stroke-dashoffset: 0; }} }}
     @media (prefers-reduced-motion: reduce) {{ .{p}-trace {{ display: none; }} }}
   </style>
   <g clip-path="url(#{p}-clip)">
-    <rect width="1200" height="370" fill="url(#{p}-bg)"/>
-    <rect x="720" width="480" height="370" fill="url(#{p}-grid)"/>
-    <rect width="1200" height="370" fill="url(#{p}-glow)"/>
+    <rect width="1200" height="{H}" fill="url(#{p}-bg)"/>
+    <rect x="690" width="510" height="{H}" fill="url(#{p}-grid)"/>
+    <rect width="1200" height="{H}" fill="url(#{p}-glow)"/>
     <g class="{p}-in {p}-d1">
-      <text class="{p}-mono" x="56" y="62" font-size="12" letter-spacing="2.6" fill="{ACC}">{esc(eyebrow)}</text>
-      <text class="{p}-serif" x="54" y="126" font-size="52" font-weight="300" letter-spacing="-1.5" fill="{TEXT}">{esc(name)}{tag_svg}</text>
-      <text class="{p}-sans" x="56" y="166" font-size="17" fill="{MUTE}">{esc(line)}</text>
-      <text class="{p}-mono" x="56" y="200" font-size="12.5" fill="{LIGHT}"><tspan fill="{ACC}">BUILT ›</tspan> {esc(built)}</text>
-      <line class="{p}-draw" x1="56" y1="226" x2="680" y2="226" stroke="{ACC}" stroke-opacity=".32"/>
+      <text class="{p}-mono" x="56" y="72" font-size="12" letter-spacing="2.6" fill="{ACC}">{esc(eyebrow)}</text>
+      <text class="{p}-serif" x="54" y="146" font-size="52" font-weight="300" letter-spacing="-1.5" fill="{TEXT}">{esc(name)}{tag_svg}</text>
+      <text class="{p}-sans" x="56" y="196" font-size="17" fill="{MUTE}">{esc(line)}</text>
+      <text class="{p}-mono" x="56" y="238" font-size="12.5" fill="{LIGHT}"><tspan fill="{ACC}">BUILT ›</tspan> {esc(built)}</text>
+      <line class="{p}-draw" x1="56" y1="272" x2="640" y2="272" stroke="{ACC}" stroke-opacity=".32"/>
 {stats_svg}
-      {chips(p, chip_list)}
+      {chips(p, chip_list, y=402)}
     </g>
-    <g class="{p}-in {p}-d2">
+    <g class="{p}-in {p}-d2"><g transform="translate({tx:.1f} {ty:.1f}) scale({S})">
 {visual}
-    </g>
-    <rect x=".5" y=".5" width="1199" height="369" rx="17.5" fill="none" stroke="{ACC}" stroke-opacity=".22"/>
-    <rect class="{p}-trace" style="animation-delay:{trace_delay}s" x=".5" y=".5" width="1199" height="369" rx="17.5" fill="none" stroke="url(#{p}-trace)" stroke-width="1.6" stroke-linecap="round"/>
+    </g></g>
+    <rect x=".5" y=".5" width="1199" height="{H - 1}" rx="17.5" fill="none" stroke="{ACC}" stroke-opacity=".22"/>
+    <rect class="{p}-trace" style="animation-delay:{trace_delay}s" x=".5" y=".5" width="1199" height="{H - 1}" rx="17.5" fill="none" stroke="url(#{p}-trace)" stroke-width="1.6" stroke-linecap="round"/>
   </g>
 </svg>"""
 
@@ -745,7 +752,7 @@ def project_tickless():
         <path d="M906 125 C 932 125, 936 150, 962 158" fill="none" stroke="{ACC}" stroke-opacity=".45" stroke-dasharray="4 6"/>
         <path class="{p}-draw" d="M906 159 H962" fill="none" stroke="{LIGHT}" stroke-width="1.5"/>
         <path d="M906 193 C 932 193, 936 168, 962 160" fill="none" stroke="{ACC}" stroke-opacity=".45" stroke-dasharray="4 6"/>
-        <text x="934" y="116" font-size="9" letter-spacing="1" fill="{MUTE}" text-anchor="middle">3 workers</text>
+        <text x="938" y="106" font-size="9" letter-spacing="1" fill="{MUTE}" text-anchor="middle">3 workers</text>
         <rect x="962" y="132" width="104" height="54" rx="12" fill="{CHIP}" stroke="{GOLD}" stroke-opacity=".8"/>
         <path d="M980 152 v-5 a6 6 0 0 1 12 0 v5" fill="none" stroke="{GOLD}" stroke-width="1.6"/>
         <rect x="977" y="152" width="18" height="14" rx="3" fill="{GOLD}"/>
@@ -777,42 +784,77 @@ def project_tickless():
 
 
 # ---- Toolkit ------------------------------------------------------------
+# Line icons drawn around (0, 0), about 26px across.
+ICONS = {
+    "code": '<path d="M-6 -7 L-13 0 L-6 7 M6 -7 L13 0 L6 7 M3 -10 L-3 10"/>',
+    "agents": '<circle r="3.4"/><circle cx="-10" cy="-8" r="2.4"/><circle cx="10" cy="-8" r="2.4"/><circle cx="0" cy="11" r="2.4"/>'
+              '<path d="M-2.6 -2 L-8 -6.4 M2.6 -2 L8 -6.4 M0 3.4 V8.6 M-7.6 -8 H7.6" stroke-opacity=".7"/>',
+    "server": '<rect x="-12" y="-11" width="24" height="9" rx="2.5"/><rect x="-12" y="2" width="24" height="9" rx="2.5"/>'
+              '<circle cx="-7.5" cy="-6.5" r="1.2" fill="currentColor"/><circle cx="-7.5" cy="6.5" r="1.2" fill="currentColor"/>'
+              '<path d="M0 -6.5 H7 M0 6.5 H7"/>',
+    "database": '<ellipse cx="0" cy="-8" rx="11" ry="3.8"/><path d="M-11 -8 V8 A11 3.8 0 0 0 11 8 V-8"/><path d="M-11 0 A11 3.8 0 0 0 11 0"/>',
+    "cloud": '<path d="M-10 7 H9 A5.5 5.5 0 0 0 8.4 -3.9 A7.5 7.5 0 0 0 -5.6 -5.2 A6 6 0 0 0 -10 7 Z"/><path d="M0 4 V-3 M-3 0 L0 -3.2 L3 0"/>',
+    "layers": '<path d="M0 -11 L12 -5 L0 1 L-12 -5 Z"/><path d="M-12 0.5 L0 6.5 L12 0.5" stroke-opacity=".8"/><path d="M-12 6 L0 12 L12 6" stroke-opacity=".6"/>',
+}
+
+
 def toolkit():
     panels = [
-        ("01  LANGUAGES", [(40, TEXT, 'Python <tspan font-size="13" class="tc-mono" fill="{a}" dy="-18">PRIMARY</tspan>'), (32, TEXT, "TypeScript"), (22, MUTE, "C++  ·  C  ·  SQL  ·  JavaScript")], None),
-        ("02  AI · AGENTS", [(30, TEXT, "LangGraph  ·  RAG"), (24, TEXT, "Multi-Agent Systems"), (22, MUTE, "Embeddings · Vector Search")], "NLP · PANDAS · GEMINI"),
-        ("03  BACKEND &amp; APIS", [(32, TEXT, "FastAPI  ·  Node.js"), (24, TEXT, "Express  ·  REST APIs"), (22, MUTE, "BullMQ  ·  WebSockets")], None),
-        ("04  DATA", [(32, TEXT, "PostgreSQL  ·  Redis"), (24, TEXT, "pgvector  ·  Prisma"), (22, MUTE, "Distributed locks")], "DBMS · ATOMIC CLAIMS"),
-        ("05  CLOUD &amp; DELIVERY", [(32, TEXT, "Docker  ·  AWS EC2"), (24, TEXT, "Git  ·  cron  ·  Vercel"), (22, MUTE, "OAuth 2.0  ·  JWT")], None),
-        ("06  FUNDAMENTALS", [(28, TEXT, "DSA in C++  ·  OOPS"), (22, TEXT, "Operating Systems · DBMS"), (22, MUTE, "Unit Testing · Vitest")], "HTML · CSS"),
+        ("code", "01 · LANGUAGES", "what I think in", "Python", "PRIMARY", ["TypeScript", "C++", "C", "SQL", "JavaScript", "HTML/CSS"]),
+        ("agents", "02 · AI &amp; AGENTS", "how Sakhi reasons", "LangGraph", None, ["RAG", "Multi-Agent", "Embeddings", "Vector Search", "NLP", "Gemini"]),
+        ("server", "03 · BACKEND &amp; APIS", "what serves the requests", "FastAPI", None, ["Node.js", "Express", "REST APIs", "BullMQ", "WebSockets"]),
+        ("database", "04 · DATA", "where the state lives", "PostgreSQL", None, ["Redis", "pgvector", "Prisma", "Pandas", "Distributed locks"]),
+        ("cloud", "05 · CLOUD &amp; DELIVERY", "how it ships", "Docker", None, ["AWS EC2", "Git", "cron", "Vercel", "OAuth 2.0", "JWT"]),
+        ("layers", "06 · FUNDAMENTALS", "what holds it all up", "DSA in C++", None, ["OOPS", "Operating Systems", "DBMS", "Unit Testing", "Vitest"]),
     ]
-    ys = [(96, 146, 180), (90, 130, 164), (90, 132, 170)]
+    W, Hc = 360, 264
     out = []
-    for k, (lab, rows, foot) in enumerate(panels):
+    for k, (icon, lab, cap, lead, tag, items) in enumerate(panels):
         x = [32, 420, 808][k % 3]
-        y = 32 if k < 3 else 268
-        yy = ys[0] if k == 0 else ys[1] if foot else ys[2]
-        lines = "\n".join(
-            f'    <text class="tc-serif" x="24" y="{yy[r]}" font-size="{fs}" font-weight="300" fill="{col}">{txt.format(a=ACC)}</text>'
-            for r, (fs, col, txt) in enumerate(rows))
-        foot_svg = f'\n    <text class="tc-mono" x="24" y="186" font-size="10" letter-spacing="1.4" fill="{MUTE}">{foot}</text>' if foot else ""
+        y = 32 if k < 3 else 32 + Hc + 40
+        # chips wrap inside the card
+        chip_svg, cx, cy = [], 24, 170
+        for n, item in enumerate(items):
+            w = round(len(item) * 7 + 22)
+            if cx + w > W - 24:
+                cx, cy = 24, cy + 40
+            chip_svg.append(f'<g class="tc-chip" style="animation-delay:{.9 + k * .12 + n * .07:.2f}s"><rect x="{cx}" y="{cy}" width="{w}" height="28" rx="14" fill="{CHIP}" stroke="{ACC}" stroke-opacity=".38"/>'
+                            f'<text class="tc-mono" x="{cx + w / 2:g}" y="{cy + 18.5}" text-anchor="middle" font-size="11.5" fill="{LIGHT}">{esc(item)}</text></g>')
+            cx += w + 8
+        tag_svg = f'<tspan class="tc-mono" font-size="11" letter-spacing="1.6" fill="{ACC}" dx="12" dy="-14">{tag}</tspan>' if tag else ""
         out.append(f"""  <g class="tc-panel tc-p{k + 1}"><g transform="translate({x} {y})">
-    <rect width="360" height="200" rx="14" fill="{BG}" fill-opacity=".88" stroke="{ACC}" stroke-opacity=".24"/>
-    <rect class="tc-trace" style="animation-delay:{-k * 1.15:.2f}s" width="360" height="200" rx="14" fill="none" stroke="url(#tc-trace)" stroke-width="1.4" stroke-linecap="round"/>
-    <text class="tc-mono" x="24" y="38" font-size="11" letter-spacing="2.4" fill="{ACC}">{lab}</text>
-{lines}{foot_svg}
+    <rect width="{W}" height="{Hc}" rx="16" fill="{BG}" fill-opacity=".9" stroke="{ACC}" stroke-opacity=".24"/>
+    <rect class="tc-trace" style="animation-delay:{-k * 1.15:.2f}s" width="{W}" height="{Hc}" rx="16" fill="none" stroke="url(#tc-trace)" stroke-width="1.4" stroke-linecap="round"/>
+    <g transform="translate(24 24)">
+      <rect width="48" height="48" rx="13" fill="{CHIP}" stroke="{ACC}" stroke-opacity=".5"/>
+      <rect width="48" height="48" rx="13" fill="url(#tc-icon-glow)"/>
+      <rect width="48" height="48" rx="13" fill="none" stroke="{LIGHT}" stroke-opacity="0">
+        <animate attributeName="stroke-opacity" values="0;.9;0" dur="4s" begin="{1.5 + k * .6:.1f}s" repeatCount="indefinite"/>
+      </rect>
+      <g transform="translate(24 24)" fill="none" stroke="{LIGHT}" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" color="{LIGHT}">{ICONS[icon]}</g>
+    </g>
+    <text class="tc-mono" x="88" y="44" font-size="11" letter-spacing="2.4" fill="{ACC}">{lab}</text>
+    <text class="tc-sans" x="88" y="66" font-size="13" fill="{MUTE}">{cap}</text>
+    <line x1="24" y1="96" x2="{W - 24}" y2="96" stroke="{ACC}" stroke-opacity=".16"/>
+    <text class="tc-serif" x="24" y="144" font-size="32" font-weight="300" fill="{TEXT}">{lead}{tag_svg}</text>
+    {"".join(chip_svg)}
   </g></g>""")
     body = "\n".join(out)
+    Hp = 32 + Hc + 40 + Hc + 32
+    mid = 32 + Hc + 20
     return f"""
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" width="1200" height="500" role="img" aria-labelledby="tc-title tc-desc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 {Hp}" width="1200" height="{Hp}" role="img" aria-labelledby="tc-title tc-desc">
   <title id="tc-title">Tech stack</title>
-  <desc id="tc-desc">Languages: Python (primary), TypeScript, C++, C, SQL, JavaScript, HTML, CSS. AI and agents: LangGraph, RAG, multi-agent systems, embeddings, vector search, NLP, Pandas, Gemini. Backend: FastAPI, Node.js, Express, REST APIs, BullMQ, WebSockets. Data: PostgreSQL, Redis, pgvector, Prisma. Cloud and delivery: Docker, AWS EC2, Git, OAuth 2.0, JWT. Fundamentals: DSA in C++, OOPS, operating systems, DBMS, unit testing.</desc>
+  <desc id="tc-desc">Languages: Python (primary), TypeScript, C++, C, SQL, JavaScript, HTML and CSS. AI and agents: LangGraph, RAG, multi-agent systems, embeddings, vector search, NLP, Gemini. Backend and APIs: FastAPI, Node.js, Express, REST APIs, BullMQ, WebSockets. Data: PostgreSQL, Redis, pgvector, Prisma, Pandas, distributed locks. Cloud and delivery: Docker, AWS EC2, Git, cron, Vercel, OAuth 2.0, JWT. Fundamentals: DSA in C++, OOPS, operating systems, DBMS, unit testing with Vitest.</desc>
   <defs>
     <linearGradient id="tc-bg" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="{BG}"/><stop offset="1" stop-color="{DEEP}"/>
     </linearGradient>
     <radialGradient id="tc-glow" cx="50%" cy="50%" r="60%">
       <stop offset="0" stop-color="{MDEEP}" stop-opacity=".9"/><stop offset="1" stop-color="{MDEEP}" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="tc-icon-glow" cx="30%" cy="20%" r="90%">
+      <stop offset="0" stop-color="{ROYAL}" stop-opacity=".45"/><stop offset="1" stop-color="{ROYAL}" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="tc-pulse">
       <stop offset="0" stop-color="{TEXT}"/><stop offset=".5" stop-color="{LIGHT}" stop-opacity=".6"/><stop offset="1" stop-color="{ACC}" stop-opacity="0"/>
@@ -826,31 +868,33 @@ def toolkit():
     .tc-panel {{ animation: tc-in 1.1s cubic-bezier(.16,1,.3,1) both; }}
     .tc-p1 {{ animation-delay: .05s; }} .tc-p2 {{ animation-delay: .2s; }} .tc-p3 {{ animation-delay: .35s; }}
     .tc-p4 {{ animation-delay: .5s; }} .tc-p5 {{ animation-delay: .65s; }} .tc-p6 {{ animation-delay: .8s; }}
+    .tc-chip {{ animation: tc-chip .7s cubic-bezier(.34,1.56,.64,1) both; }}
     .tc-web {{ stroke-dasharray: 1800; stroke-dashoffset: 1800; animation: tc-draw 3s cubic-bezier(.65,0,.35,1) 1s forwards; }}
     @keyframes tc-in {{ from {{ opacity: 0; transform: translateY(12px); }} to {{ opacity: 1; transform: none; }} }}
+    @keyframes tc-chip {{ from {{ opacity: 0; transform: translateY(8px); }} to {{ opacity: 1; transform: none; }} }}
     @keyframes tc-draw {{ to {{ stroke-dashoffset: 0; }} }}
     @media (prefers-reduced-motion: reduce) {{
-      .tc-panel {{ animation: none; }}
+      .tc-panel, .tc-chip {{ animation: none; }}
       .tc-web {{ animation: none; stroke-dashoffset: 0; }}
     }}
-    .tc-trace {{ stroke-dasharray: 201 1120; stroke-dashoffset: 1321; animation: tc-trace 7s linear infinite; }}
+    .tc-trace {{ stroke-dasharray: 220 {2 * (W + Hc) - 220}; stroke-dashoffset: {2 * (W + Hc)}; animation: tc-trace 7s linear infinite; }}
     @keyframes tc-trace {{ to {{ stroke-dashoffset: 0; }} }}
     @media (prefers-reduced-motion: reduce) {{ .tc-trace {{ display: none; }} }}
   </style>
 
-  <rect width="1200" height="500" rx="20" fill="url(#tc-bg)"/>
-  <rect width="1200" height="500" rx="20" fill="url(#tc-glow)"/>
-  <rect x=".5" y=".5" width="1199" height="499" rx="19.5" fill="none" stroke="{ACC}" stroke-opacity=".18"/>
+  <rect width="1200" height="{Hp}" rx="20" fill="url(#tc-bg)"/>
+  <rect width="1200" height="{Hp}" rx="20" fill="url(#tc-glow)"/>
+  <rect x=".5" y=".5" width="1199" height="{Hp - 1}" rx="19.5" fill="none" stroke="{ACC}" stroke-opacity=".18"/>
 
   <!-- Constellation: gutters linking the six groups -->
-  <path class="tc-web" d="M24 250 H1176 M406 24 V476 M794 24 V476" fill="none" stroke="{ACC}" stroke-opacity=".24"/>
-  <circle cx="0" cy="250" r="8" fill="url(#tc-pulse)" opacity="0">
+  <path class="tc-web" d="M24 {mid} H1176 M406 24 V{Hp - 24} M794 24 V{Hp - 24}" fill="none" stroke="{ACC}" stroke-opacity=".24"/>
+  <circle cx="0" cy="{mid}" r="8" fill="url(#tc-pulse)" opacity="0">
     <animate attributeName="cx" values="24;1176" dur="9s" begin="3s" repeatCount="indefinite" calcMode="spline" keyTimes="0;1" keySplines=".45 0 .55 1"/>
     <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.1;.9;1" dur="9s" begin="3s" repeatCount="indefinite"/>
   </circle>
   <g fill="{DEEP}" stroke="{LIGHT}">
-    <rect x="400" y="244" width="12" height="12" transform="rotate(45 406 250)"/>
-    <rect x="788" y="244" width="12" height="12" transform="rotate(45 794 250)"/>
+    <rect x="400" y="{mid - 6}" width="12" height="12" transform="rotate(45 406 {mid})"/>
+    <rect x="788" y="{mid - 6}" width="12" height="12" transform="rotate(45 794 {mid})"/>
   </g>
 
 {body}
@@ -861,46 +905,45 @@ def toolkit():
 def education():
     def tile(x, y, w, h, label, dots, inner, delay, edge_delay):
         per = 2 * (w + h)
-        dot_svg = "".join(f'<circle cx="{w - 27 - i * 11}" cy="31" r="3.5" fill="{ACC}"/>' for i in range(dots))
+        dot_svg = "".join(f'<circle cx="{w - 27 - i * 11}" cy="33" r="3.5" fill="{ACC}"/>' for i in range(dots))
         return f"""  <g class="ce-tile" style="animation-delay:{delay:.2f}s"><g transform="translate({x} {y})">
     <rect width="{w}" height="{h}" rx="14" fill="{BG}" stroke="{ACC}" stroke-opacity=".26"/>
     <rect width="{w}" height="{h}" rx="14" fill="none" stroke="url(#ce-edge)" stroke-width="1.2" class="ce-edge" style="stroke-dasharray:{per};stroke-dashoffset:{per};animation-delay:{edge_delay:.2f}s"/>
-    <text class="ce-mono" x="22" y="36" font-size="11.5" letter-spacing="2.6" fill="{ACC}">{label}</text>
+    <text class="ce-mono" x="24" y="38" font-size="11.5" letter-spacing="2.6" fill="{ACC}">{label}</text>
     {dot_svg}
-    <line x1="22" y1="54" x2="{w - 22}" y2="54" stroke="{ACC}" stroke-opacity=".16"/>
+    <line x1="24" y1="60" x2="{w - 24}" y2="60" stroke="{ACC}" stroke-opacity=".16"/>
 {inner}
   </g></g>"""
 
-    btech = f"""    <text class="ce-serif" x="22" y="118" font-size="56" font-weight="300" fill="{TEXT}">9.32</text>
-    <text class="ce-mono" x="146" y="96" font-size="11" letter-spacing="2" fill="{LIGHT}">CGPA / 10</text>
-    <text class="ce-sans" x="146" y="118" font-size="14" fill="{TEXT}">Bhagwan Parshuram Institute of Technology</text>
-    <rect x="22" y="138" width="516" height="5" rx="2.5" fill="{CHIP}"/>
-    <rect x="22" y="138" width="481" height="5" rx="2.5" fill="url(#ce-bar)" class="ce-fill"/>
-    <text class="ce-mono" x="538" y="160" font-size="10" letter-spacing="1.4" fill="{MUTE}" text-anchor="end">NEW DELHI · 2023 – 2027</text>"""
+    btech = f"""    <text class="ce-serif" x="24" y="136" font-size="58" font-weight="300" fill="{TEXT}">9.32</text>
+    <text class="ce-mono" x="152" y="108" font-size="11" letter-spacing="2" fill="{LIGHT}">CGPA / 10</text>
+    <text class="ce-sans" x="152" y="134" font-size="14.5" fill="{TEXT}">Bhagwan Parshuram Institute of Technology</text>
+    <rect x="24" y="162" width="512" height="5" rx="2.5" fill="{CHIP}"/>
+    <rect x="24" y="162" width="477" height="5" rx="2.5" fill="url(#ce-bar)" class="ce-fill"/>
+    <text class="ce-mono" x="536" y="192" font-size="10.5" letter-spacing="1.6" fill="{MUTE}" text-anchor="end">NEW DELHI · 2023 – 2027</text>"""
 
     def school(score, year):
-        return f"""    <text class="ce-serif" x="22" y="112" font-size="44" font-weight="300" fill="{TEXT}">{score}</text>
-    <text class="ce-sans" x="22" y="138" font-size="13" fill="{MUTE}">ASN Senior Secondary School</text>
-    <text class="ce-mono" x="22" y="158" font-size="10" letter-spacing="1.4" fill="{MUTE}">NEW DELHI · {year}</text>"""
+        return f"""    <text class="ce-serif" x="24" y="126" font-size="46" font-weight="300" fill="{TEXT}">{score}</text>
+    <text class="ce-sans" x="24" y="160" font-size="13.5" fill="{MUTE}">ASN Senior Secondary School</text>
+    <text class="ce-mono" x="24" y="186" font-size="10.5" letter-spacing="1.6" fill="{MUTE}">NEW DELHI · {year}</text>"""
 
-    def two(a, b, c=None):
-        s = f'    <text class="ce-sans" x="22" y="86" font-size="14" fill="{TEXT}">{a}</text><text class="ce-sans" x="22" y="108" font-size="14" fill="{TEXT}">{b}</text>'
-        if c:
-            s += f'<text class="ce-sans" x="22" y="130" font-size="14" fill="{LIGHT}">{c}</text>'
-        return s
+    def three(a, b, c):
+        return (f'    <text class="ce-sans" x="24" y="98" font-size="14.5" fill="{TEXT}">{a}</text>'
+                f'<text class="ce-sans" x="24" y="128" font-size="14.5" fill="{TEXT}">{b}</text>'
+                f'<text class="ce-sans" x="24" y="158" font-size="14.5" fill="{LIGHT}">{c}</text>')
 
     tiles = [
-        tile(40, 40, 560, 170, "B.TECH · INFORMATION TECHNOLOGY", 4, btech, .2, 2.0),
-        tile(620, 40, 260, 170, "CBSE CLASS XII", 2, school("84.6%", "2023"), .32, 2.35),
-        tile(900, 40, 260, 170, "CBSE CLASS X", 2, school("94.4%", "2021"), .44, 2.7),
-        tile(40, 230, 265, 150, "CORE CS", 3, two("Data Structures &amp;", "Algorithms in C++", "OOPS"), .56, 3.05),
-        tile(325, 230, 265, 150, "SYSTEMS", 2, two("Operating Systems", "DBMS", "Distributed Systems"), .68, 3.4),
-        tile(610, 230, 265, 150, "ENGINEERING", 2, two("Unit Testing", "REST APIs · OAuth 2.0", "JWT authentication"), .8, 3.75),
-        tile(895, 230, 265, 150, "ALWAYS LEARNING", 1, two("Agentic AI for Bharat —", "7-day national build", "Meesho ScriptedBy{Her}"), .92, 4.1),
+        tile(40, 40, 560, 214, "B.TECH · INFORMATION TECHNOLOGY", 4, btech, .2, 2.0),
+        tile(620, 40, 260, 214, "CBSE CLASS XII", 2, school("84.6%", "2023"), .32, 2.35),
+        tile(900, 40, 260, 214, "CBSE CLASS X", 2, school("94.4%", "2021"), .44, 2.7),
+        tile(40, 274, 265, 186, "CORE CS", 3, three("Data Structures &amp;", "Algorithms in C++", "OOPS"), .56, 3.05),
+        tile(325, 274, 265, 186, "SYSTEMS", 2, three("Operating Systems", "DBMS", "Distributed Systems"), .68, 3.4),
+        tile(610, 274, 265, 186, "ENGINEERING", 2, three("Unit Testing", "REST APIs · OAuth 2.0", "JWT authentication"), .8, 3.75),
+        tile(895, 274, 265, 186, "ALWAYS LEARNING", 1, three("Agentic AI for Bharat —", "7-day national build", "Meesho ScriptedBy{Her}"), .92, 4.1),
     ]
     body = "\n".join(tiles)
     return f"""
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="1200" height="420" role="img" aria-labelledby="ce-t ce-d">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" width="1200" height="500" role="img" aria-labelledby="ce-t ce-d">
   <title id="ce-t">Education</title>
   <desc id="ce-d">B.Tech in Information Technology, Bhagwan Parshuram Institute of Technology, New Delhi, 2023 to 2027, CGPA 9.32. CBSE Class XII 84.6% (2023) and Class X 94.4% (2021), ASN Senior Secondary School, New Delhi. Coursework: data structures and algorithms in C++, OOPS, operating systems, DBMS, distributed systems, unit testing.</desc>
   <defs>
@@ -919,9 +962,9 @@ def education():
     @keyframes ce-fill {{ from {{ transform: scaleX(0); }} to {{ transform: none; }} }}
     @media (prefers-reduced-motion: reduce) {{ .ce-tile, .ce-fill {{ animation: none; }} .ce-edge {{ display: none; }} }}
   </style>
-  <rect width="1200" height="420" rx="20" fill="url(#ce-bg)"/>
-  <rect width="1200" height="420" rx="20" fill="url(#ce-glow)"/>
-  <rect x=".5" y=".5" width="1199" height="419" rx="19.5" fill="none" stroke="{ACC}" stroke-opacity=".18"/>
+  <rect width="1200" height="500" rx="20" fill="url(#ce-bg)"/>
+  <rect width="1200" height="500" rx="20" fill="url(#ce-glow)"/>
+  <rect x=".5" y=".5" width="1199" height="499" rx="19.5" fill="none" stroke="{ACC}" stroke-opacity=".18"/>
 {body}
 </svg>"""
 

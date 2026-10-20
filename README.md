@@ -10,7 +10,7 @@
 </p>
 
 <img src="assets/title-about.svg" width="100%" alt="01 About — Hello, I'm Komal.">
-<img src="assets/about-intro.svg" width="100%" alt="About: Python and AI engineer and backend developer. B.Tech in Information Technology at Bhagwan Parshuram Institute of Technology, CGPA 9.32. Python Engineering Intern at Meevick Enterprises, 2026. Shipped Sakhi, Tickless and an NSE trading engine. Primary language Python; systems in TypeScript; drawn to agentic AI.">
+<img src="assets/about-intro.svg" width="100%" alt="About: Python and AI engineer and backend developer. B.Tech in Information Technology at Bhagwan Parshuram Institute of Technology, CGPA 9.32. Python Engineering Intern at Meevick Enterprises, 2026. Three builds: an NSE trading engine with an 18-rung trailing stop-loss; Sakhi, a Hindi voice co-pilot with 4 specialist agents; and Tickless, a zero-cron email scheduler with Redis locks.">
 
 <img src="assets/title-recognition.svg" width="100%" alt="02 Recognition — Proof, on the record.">
 <img src="assets/recognition.svg" width="100%" alt="Meesho ScriptedBy Her 2.0 National Semi-Finalist, Top 50 of 36,000+ women developers; Flipkart GRiD 8.0 Semi-Finalist among 165,000+ applicants; CGPA 9.32; Sakhi's 11-node LangGraph with 4 agents; 60+ Vitest unit tests in Tickless.">
@@ -26,14 +26,13 @@
   <a href="https://github.com/Komal25-ux/Meesho_ScriptedByHer2.0_KomalMittal"><img src="https://img.shields.io/badge/Repository-Sakhi-172B78?style=for-the-badge&labelColor=0B1230&logoColor=EEF2FF&logo=github" alt="Sakhi repository"></a>
 </p>
 
-<a href="https://github.com/Komal25-ux/outbox-sde-assignment"><img src="assets/project-tickless.svg" width="100%" alt="Tickless: a distributed email scheduler with zero cron jobs. Campaigns become BullMQ delayed jobs in Redis, paced per sender by a Redis SET NX PX lock and atomic hourly rate windows, sent from the user's Gmail via OAuth 2.0. Crash-safe with idempotent job IDs and an orphan-job scanner; 60+ Vitest unit tests. TypeScript, Node.js, BullMQ, Redis, PostgreSQL, Prisma, Next.js."></a>
+<a href="https://github.com/KomalMittal25/tickless"><img src="assets/project-tickless.svg" width="100%" alt="Tickless: a distributed email scheduler with zero cron jobs. Campaigns become BullMQ delayed jobs in Redis, paced per sender by a Redis SET NX PX lock and atomic hourly rate windows, sent from the user's Gmail via OAuth 2.0. Crash-safe with idempotent job IDs and an orphan-job scanner; 60+ Vitest unit tests. TypeScript, Node.js, BullMQ, Redis, PostgreSQL, Prisma, Next.js."></a>
 <p align="center">
   <a href="https://tickless-nu.vercel.app"><img src="https://img.shields.io/badge/Live_demo-tickless-172B78?style=for-the-badge&labelColor=0B1230&logoColor=EEF2FF&logo=vercel" alt="Tickless live demo"></a>
-  <a href="https://github.com/Komal25-ux/outbox-sde-assignment"><img src="https://img.shields.io/badge/Repository-Tickless-172B78?style=for-the-badge&labelColor=0B1230&logoColor=EEF2FF&logo=github" alt="Tickless repository"></a>
+  <a href="https://github.com/KomalMittal25/tickless"><img src="https://img.shields.io/badge/Repository-Tickless-172B78?style=for-the-badge&labelColor=0B1230&logoColor=EEF2FF&logo=github" alt="Tickless repository"></a>
 </p>
 
 <p align="center">
-  <a href="https://github.com/Komal25-ux/weather-advisory-bot"><img src="https://img.shields.io/badge/More-Weather_Advisory_Bot-172B78?style=for-the-badge&labelColor=0B1230&logoColor=EEF2FF&logo=github" alt="Weather Advisory Bot repository"></a>
   <a href="https://github.com/Komal25-ux/Movie-Recommender-System"><img src="https://img.shields.io/badge/More-Movie_Recommender-172B78?style=for-the-badge&labelColor=0B1230&logoColor=EEF2FF&logo=github" alt="Movie Recommender System repository"></a>
   <a href="https://github.com/Komal25-ux/SMS-Spam-Classifier"><img src="https://img.shields.io/badge/More-SMS_Spam_Classifier-172B78?style=for-the-badge&labelColor=0B1230&logoColor=EEF2FF&logo=github" alt="SMS Spam Classifier repository"></a>
   <a href="https://github.com/Komal25-ux/Laptop-Price-Predictor"><img src="https://img.shields.io/badge/More-Laptop_Price_Predictor-172B78?style=for-the-badge&labelColor=0B1230&logoColor=EEF2FF&logo=github" alt="Laptop Price Predictor repository"></a>

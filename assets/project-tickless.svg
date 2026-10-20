@@ -1,10 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 370" width="1200" height="370" role="img" aria-labelledby="p2-t">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" width="1200" height="480" role="img" aria-labelledby="p2-t">
   <title id="p2-t">Tickless: a distributed email scheduler with zero cron jobs. BullMQ delayed jobs in Redis, a Redis sender lock and crash-safe delivery from the user's own Gmail.</title>
   <defs>
     <linearGradient id="p2-bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#0B1230"/><stop offset="1" stop-color="#070B1F"/>
     </linearGradient>
-    <radialGradient id="p2-glow" cx="82%" cy="30%" r="55%">
+    <radialGradient id="p2-glow" cx="80%" cy="38%" r="55%">
       <stop offset="0" stop-color="#2647C8" stop-opacity=".55"/><stop offset="1" stop-color="#172B78" stop-opacity="0"/>
     </radialGradient>
     <pattern id="p2-grid" width="28" height="28" patternUnits="userSpaceOnUse">
@@ -13,7 +13,7 @@
     <filter id="p2-glowf" x="-50%" y="-50%" width="200%" height="200%">
       <feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
-    <clipPath id="p2-clip"><rect width="1200" height="370" rx="18"/></clipPath>
+    <clipPath id="p2-clip"><rect width="1200" height="480" rx="18"/></clipPath>
     <linearGradient id="p2-trace" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#EEF2FF"/><stop offset=".45" stop-color="#B9CBFF"/><stop offset="1" stop-color="#6F8FF7" stop-opacity="0"/>
     </linearGradient>
@@ -34,26 +34,26 @@
     @keyframes p2-draw { to { stroke-dashoffset: 0; } }
     @keyframes p2-bar { from { transform: scaleY(.25); } to { transform: scaleY(1); } }
     @media (prefers-reduced-motion: reduce) { .p2-in, .p2-chip, .p2-pop, .p2-bar { animation: none; } .p2-draw, .p2-draw-late { animation: none; stroke-dashoffset: 0; } }
-    .p2-trace { stroke-dasharray: 564 3136; stroke-dashoffset: 3700; animation: p2-trace 7s linear infinite; }
+    .p2-trace { stroke-dasharray: 564 2792; stroke-dashoffset: 3356; animation: p2-trace 7s linear infinite; }
     @keyframes p2-trace { to { stroke-dashoffset: 0; } }
     @media (prefers-reduced-motion: reduce) { .p2-trace { display: none; } }
   </style>
   <g clip-path="url(#p2-clip)">
-    <rect width="1200" height="370" fill="url(#p2-bg)"/>
-    <rect x="720" width="480" height="370" fill="url(#p2-grid)"/>
-    <rect width="1200" height="370" fill="url(#p2-glow)"/>
+    <rect width="1200" height="480" fill="url(#p2-bg)"/>
+    <rect x="690" width="510" height="480" fill="url(#p2-grid)"/>
+    <rect width="1200" height="480" fill="url(#p2-glow)"/>
     <g class="p2-in p2-d1">
-      <text class="p2-mono" x="56" y="62" font-size="12" letter-spacing="2.6" fill="#6F8FF7">02 · DISTRIBUTED SYSTEMS · JOB SCHEDULING</text>
-      <text class="p2-serif" x="54" y="126" font-size="52" font-weight="300" letter-spacing="-1.5" fill="#EEF2FF">Tickless<tspan class="p2-serif" font-size="22" font-style="italic" fill="#B9CBFF" dx="14">zero cron jobs</tspan></text>
-      <text class="p2-sans" x="56" y="166" font-size="17" fill="#A5AFCB">A distributed email scheduler that sends from your own Gmail.</text>
-      <text class="p2-mono" x="56" y="200" font-size="12.5" fill="#B9CBFF"><tspan fill="#6F8FF7">BUILT ›</tspan> Redis SET NX PX lock · atomic hourly rate windows</text>
-      <line class="p2-draw" x1="56" y1="226" x2="680" y2="226" stroke="#6F8FF7" stroke-opacity=".32"/>
-    <g transform="translate(56 266)"><text class="p2-serif" font-size="34" font-weight="300" fill="#EEF2FF">0</text><text class="p2-sans" y="24" font-size="12.5" fill="#A5AFCB">cron jobs</text></g>
-    <g transform="translate(261 266)"><text class="p2-serif" font-size="34" font-weight="300" fill="#EEF2FF">60+</text><text class="p2-sans" y="24" font-size="12.5" fill="#A5AFCB">Vitest unit tests</text></g>
-    <g transform="translate(466 266)"><text class="p2-serif" font-size="34" font-weight="300" fill="#EEF2FF">JWT</text><text class="p2-sans" y="24" font-size="12.5" fill="#A5AFCB">auth + OAuth 2.0 Gmail</text></g>
-      <g class="p2-chip" style="animation-delay:1.00s"><rect x="56" y="314" width="91" height="26" rx="13" fill="#111D4A" stroke="#6F8FF7" stroke-opacity=".38"/><text class="p2-mono" x="101.5" y="331" text-anchor="middle" font-size="11.5" fill="#B9CBFF">TypeScript</text></g><g class="p2-chip" style="animation-delay:1.12s"><rect x="155" y="314" width="70" height="26" rx="13" fill="#111D4A" stroke="#6F8FF7" stroke-opacity=".38"/><text class="p2-mono" x="190" y="331" text-anchor="middle" font-size="11.5" fill="#B9CBFF">Node.js</text></g><g class="p2-chip" style="animation-delay:1.24s"><rect x="233" y="314" width="63" height="26" rx="13" fill="#111D4A" stroke="#6F8FF7" stroke-opacity=".38"/><text class="p2-mono" x="264.5" y="331" text-anchor="middle" font-size="11.5" fill="#B9CBFF">BullMQ</text></g><g class="p2-chip" style="animation-delay:1.36s"><rect x="304" y="314" width="56" height="26" rx="13" fill="#111D4A" stroke="#6F8FF7" stroke-opacity=".38"/><text class="p2-mono" x="332" y="331" text-anchor="middle" font-size="11.5" fill="#B9CBFF">Redis</text></g><g class="p2-chip" style="animation-delay:1.48s"><rect x="368" y="314" width="91" height="26" rx="13" fill="#111D4A" stroke="#6F8FF7" stroke-opacity=".38"/><text class="p2-mono" x="413.5" y="331" text-anchor="middle" font-size="11.5" fill="#B9CBFF">PostgreSQL</text></g><g class="p2-chip" style="animation-delay:1.60s"><rect x="467" y="314" width="63" height="26" rx="13" fill="#111D4A" stroke="#6F8FF7" stroke-opacity=".38"/><text class="p2-mono" x="498.5" y="331" text-anchor="middle" font-size="11.5" fill="#B9CBFF">Prisma</text></g><g class="p2-chip" style="animation-delay:1.72s"><rect x="538" y="314" width="70" height="26" rx="13" fill="#111D4A" stroke="#6F8FF7" stroke-opacity=".38"/><text class="p2-mono" x="573" y="331" text-anchor="middle" font-size="11.5" fill="#B9CBFF">Next.js</text></g>
+      <text class="p2-mono" x="56" y="72" font-size="12" letter-spacing="2.6" fill="#6F8FF7">02 · DISTRIBUTED SYSTEMS · JOB SCHEDULING</text>
+      <text class="p2-serif" x="54" y="146" font-size="52" font-weight="300" letter-spacing="-1.5" fill="#EEF2FF">Tickless<tspan class="p2-serif" font-size="22" font-style="italic" fill="#B9CBFF" dx="14">zero cron jobs</tspan></text>
+      <text class="p2-sans" x="56" y="196" font-size="17" fill="#A5AFCB">A distributed email scheduler that sends from your own Gmail.</text>
+      <text class="p2-mono" x="56" y="238" font-size="12.5" fill="#B9CBFF"><tspan fill="#6F8FF7">BUILT ›</tspan> Redis SET NX PX lock · atomic hourly rate windows</text>
+      <line class="p2-draw" x1="56" y1="272" x2="640" y2="272" stroke="#6F8FF7" stroke-opacity=".32"/>
+    <g transform="translate(56 330)"><text class="p2-serif" font-size="36" font-weight="300" fill="#EEF2FF">0</text><text class="p2-sans" y="32" font-size="13" fill="#A5AFCB">cron jobs</text></g>
+    <g transform="translate(261 330)"><text class="p2-serif" font-size="36" font-weight="300" fill="#EEF2FF">60+</text><text class="p2-sans" y="32" font-size="13" fill="#A5AFCB">Vitest unit tests</text></g>
+    <g transform="translate(466 330)"><text class="p2-serif" font-size="36" font-weight="300" fill="#EEF2FF">JWT</text><text class="p2-sans" y="32" font-size="13" fill="#A5AFCB">auth + OAuth 2.0 Gmail</text></g>
+      <g class="p2-chip" style="animation-delay:1.00s"><rect x="56" y="402" width="91" height="26" rx="13" fill="#111D4A" stroke="#6F8FF7" stroke-opacity=".38"/><text class="p2-mono" x="101.5" y="419" text-anchor="middle" font-size="11.5" fill="#B9CBFF">TypeScript</text></g><g class="p2-chip" style="animation-delay:1.12s"><rect x="155" y="402" width="70" height="26" rx="13" fill="#111D4A" stroke="#6F8FF7" stroke-opacity=".38"/><text class="p2-mono" x="190" y="419" text-anchor="middle" font-size="11.5" fill="#B9CBFF">Node.js</text></g><g class="p2-chip" style="animation-delay:1.24s"><rect x="233" y="402" width="63" height="26" rx="13" fill="#111D4A" stroke="#6F8FF7" stroke-opacity=".38"/><text class="p2-mono" x="264.5" y="419" text-anchor="middle" font-size="11.5" fill="#B9CBFF">BullMQ</text></g><g class="p2-chip" style="animation-delay:1.36s"><rect x="304" y="402" width="56" height="26" rx="13" fill="#111D4A" stroke="#6F8FF7" stroke-opacity=".38"/><text class="p2-mono" x="332" y="419" text-anchor="middle" font-size="11.5" fill="#B9CBFF">Redis</text></g><g class="p2-chip" style="animation-delay:1.48s"><rect x="368" y="402" width="91" height="26" rx="13" fill="#111D4A" stroke="#6F8FF7" stroke-opacity=".38"/><text class="p2-mono" x="413.5" y="419" text-anchor="middle" font-size="11.5" fill="#B9CBFF">PostgreSQL</text></g><g class="p2-chip" style="animation-delay:1.60s"><rect x="467" y="402" width="63" height="26" rx="13" fill="#111D4A" stroke="#6F8FF7" stroke-opacity=".38"/><text class="p2-mono" x="498.5" y="419" text-anchor="middle" font-size="11.5" fill="#B9CBFF">Prisma</text></g><g class="p2-chip" style="animation-delay:1.72s"><rect x="538" y="402" width="70" height="26" rx="13" fill="#111D4A" stroke="#6F8FF7" stroke-opacity=".38"/><text class="p2-mono" x="573" y="419" text-anchor="middle" font-size="11.5" fill="#B9CBFF">Next.js</text></g>
     </g>
-    <g class="p2-in p2-d2">
+    <g class="p2-in p2-d2"><g transform="translate(-235.2 2.4) scale(1.2)">
       <g class="p2-mono">
         <text x="772" y="92" font-size="10.5" letter-spacing="2.4" fill="#A5AFCB">BULLMQ DELAYED JOBS · REDIS · ZERO CRON</text>
         <g><rect x="772" y="112" width="134" height="26" rx="8" fill="#111D4A" stroke="#6F8FF7" stroke-opacity="0.35">
@@ -68,7 +68,7 @@
         <path d="M906 125 C 932 125, 936 150, 962 158" fill="none" stroke="#6F8FF7" stroke-opacity=".45" stroke-dasharray="4 6"/>
         <path class="p2-draw" d="M906 159 H962" fill="none" stroke="#B9CBFF" stroke-width="1.5"/>
         <path d="M906 193 C 932 193, 936 168, 962 160" fill="none" stroke="#6F8FF7" stroke-opacity=".45" stroke-dasharray="4 6"/>
-        <text x="934" y="116" font-size="9" letter-spacing="1" fill="#A5AFCB" text-anchor="middle">3 workers</text>
+        <text x="938" y="106" font-size="9" letter-spacing="1" fill="#A5AFCB" text-anchor="middle">3 workers</text>
         <rect x="962" y="132" width="104" height="54" rx="12" fill="#111D4A" stroke="#C9A27A" stroke-opacity=".8"/>
         <path d="M980 152 v-5 a6 6 0 0 1 12 0 v5" fill="none" stroke="#C9A27A" stroke-width="1.6"/>
         <rect x="977" y="152" width="18" height="14" rx="3" fill="#C9A27A"/>
@@ -88,8 +88,8 @@
         </rect>
         <text x="1176" y="300" font-size="10.5" letter-spacing="1.5" text-anchor="end" fill="#A5AFCB">idempotent job IDs · atomic claims · orphan scanner</text>
       </g>
-    </g>
-    <rect x=".5" y=".5" width="1199" height="369" rx="17.5" fill="none" stroke="#6F8FF7" stroke-opacity=".22"/>
-    <rect class="p2-trace" style="animation-delay:-3.4s" x=".5" y=".5" width="1199" height="369" rx="17.5" fill="none" stroke="url(#p2-trace)" stroke-width="1.6" stroke-linecap="round"/>
+    </g></g>
+    <rect x=".5" y=".5" width="1199" height="479" rx="17.5" fill="none" stroke="#6F8FF7" stroke-opacity=".22"/>
+    <rect class="p2-trace" style="animation-delay:-3.4s" x=".5" y=".5" width="1199" height="479" rx="17.5" fill="none" stroke="url(#p2-trace)" stroke-width="1.6" stroke-linecap="round"/>
   </g>
 </svg>
