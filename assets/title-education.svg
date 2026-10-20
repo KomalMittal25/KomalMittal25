@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" width="1200" height="120" role="img" aria-label="07 Education: Foundations, with distinction.">
+  <defs>
+    <linearGradient id="ted-line" gradientUnits="userSpaceOnUse" x1="40" y1="0" x2="1160" y2="0">
+      <stop offset="0" stop-color="#6F8FF7"/><stop offset=".6" stop-color="#2647C8"/><stop offset="1" stop-color="#2647C8" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="ted-sheen" gradientUnits="userSpaceOnUse" x1="-300" y1="0" x2="0" y2="0">
+      <stop offset="0" stop-color="#B9CBFF"/><stop offset=".5" stop-color="#FFFFFF"/><stop offset="1" stop-color="#B9CBFF"/>
+      <animateTransform attributeName="gradientTransform" type="translate" values="0 0;1500 0;1500 0" keyTimes="0;.4;1" dur="7s" begin="1.5s" repeatCount="indefinite"/>
+    </linearGradient>
+    <radialGradient id="ted-pulse"><stop offset="0" stop-color="#EEF2FF"/><stop offset=".5" stop-color="#B9CBFF" stop-opacity=".6"/><stop offset="1" stop-color="#6F8FF7" stop-opacity="0"/></radialGradient>
+  </defs>
+  <style>
+    .ted-serif { font-family: Georgia, "Iowan Old Style", "Palatino Linotype", "Times New Roman", serif; }
+    .ted-mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; }
+    .ted-sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+    .ted-in { animation: ted-in 1.1s cubic-bezier(.16,1,.3,1) both; }
+    .ted-d2 { animation-delay: .2s; } .ted-d3 { animation-delay: .45s; }
+    .ted-draw { stroke-dasharray: 1200; stroke-dashoffset: 1200; animation: ted-draw 1.8s cubic-bezier(.65,0,.35,1) .5s forwards; }
+    @keyframes ted-in { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+    @keyframes ted-draw { to { stroke-dashoffset: 0; } }
+    @media (prefers-reduced-motion: reduce) { .ted-in { animation: none; } .ted-draw { animation: none; stroke-dashoffset: 0; } }
+  </style>
+  <g class="ted-in">
+    <text class="ted-mono" x="40" y="34" font-size="12" letter-spacing="3" fill="#6F8FF7"><tspan fill="#B9CBFF">07</tspan>   EDUCATION</text>
+  </g>
+  <g class="ted-in ted-d2">
+    <text class="ted-serif" x="38" y="84" font-size="44" font-weight="300" letter-spacing="-1" fill="#EEF2FF">Foundations, <tspan font-style="italic" fill="url(#ted-sheen)">with distinction.</tspan></text>
+  </g>
+  <g class="ted-in ted-d3">
+    <text class="ted-mono" x="1160" y="34" text-anchor="end" font-size="10.5" letter-spacing="2.4" fill="#A5AFCB">ACADEMICS</text>
+  </g>
+  <path class="ted-draw" d="M40 106 H1160" stroke="url(#ted-line)" stroke-width="1"/>
+  <circle cx="40" cy="106" r="7" fill="url(#ted-pulse)" opacity="0">
+    <animate attributeName="cx" values="40;1160" dur="6s" begin="2.3s" repeatCount="indefinite" calcMode="spline" keyTimes="0;1" keySplines=".45 0 .55 1"/>
+    <animate attributeName="opacity" values="0;1;0" keyTimes="0;.15;1" dur="6s" begin="2.3s" repeatCount="indefinite"/>
+  </circle>
+</svg>

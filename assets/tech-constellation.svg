@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" width="1200" height="500" role="img" aria-labelledby="tc-title tc-desc">
+  <title id="tc-title">Tech stack</title>
+  <desc id="tc-desc">Languages: Python (primary), TypeScript, C++, C, SQL, JavaScript, HTML, CSS. AI and agents: LangGraph, RAG, multi-agent systems, embeddings, vector search, NLP, Pandas, Gemini. Backend: FastAPI, Node.js, Express, REST APIs, BullMQ, WebSockets. Data: PostgreSQL, Redis, pgvector, Prisma. Cloud and delivery: Docker, AWS EC2, Git, OAuth 2.0, JWT. Fundamentals: DSA in C++, OOPS, operating systems, DBMS, unit testing.</desc>
+  <defs>
+    <linearGradient id="tc-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0B1230"/><stop offset="1" stop-color="#070B1F"/>
+    </linearGradient>
+    <radialGradient id="tc-glow" cx="50%" cy="50%" r="60%">
+      <stop offset="0" stop-color="#172B78" stop-opacity=".9"/><stop offset="1" stop-color="#172B78" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="tc-pulse">
+      <stop offset="0" stop-color="#EEF2FF"/><stop offset=".5" stop-color="#B9CBFF" stop-opacity=".6"/><stop offset="1" stop-color="#6F8FF7" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="tc-trace" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#EEF2FF"/><stop offset=".45" stop-color="#B9CBFF"/><stop offset="1" stop-color="#6F8FF7" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <style>
+    .tc-serif { font-family: Georgia, "Iowan Old Style", "Palatino Linotype", "Times New Roman", serif; }
+    .tc-mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; }
+    .tc-sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+    .tc-panel { animation: tc-in 1.1s cubic-bezier(.16,1,.3,1) both; }
+    .tc-p1 { animation-delay: .05s; } .tc-p2 { animation-delay: .2s; } .tc-p3 { animation-delay: .35s; }
+    .tc-p4 { animation-delay: .5s; } .tc-p5 { animation-delay: .65s; } .tc-p6 { animation-delay: .8s; }
+    .tc-web { stroke-dasharray: 1800; stroke-dashoffset: 1800; animation: tc-draw 3s cubic-bezier(.65,0,.35,1) 1s forwards; }
+    @keyframes tc-in { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+    @keyframes tc-draw { to { stroke-dashoffset: 0; } }
+    @media (prefers-reduced-motion: reduce) {
+      .tc-panel { animation: none; }
+      .tc-web { animation: none; stroke-dashoffset: 0; }
+    }
+    .tc-trace { stroke-dasharray: 201 1120; stroke-dashoffset: 1321; animation: tc-trace 7s linear infinite; }
+    @keyframes tc-trace { to { stroke-dashoffset: 0; } }
+    @media (prefers-reduced-motion: reduce) { .tc-trace { display: none; } }
+  </style>
+
+  <rect width="1200" height="500" rx="20" fill="url(#tc-bg)"/>
+  <rect width="1200" height="500" rx="20" fill="url(#tc-glow)"/>
+  <rect x=".5" y=".5" width="1199" height="499" rx="19.5" fill="none" stroke="#6F8FF7" stroke-opacity=".18"/>
+
+  <!-- Constellation: gutters linking the six groups -->
+  <path class="tc-web" d="M24 250 H1176 M406 24 V476 M794 24 V476" fill="none" stroke="#6F8FF7" stroke-opacity=".24"/>
+  <circle cx="0" cy="250" r="8" fill="url(#tc-pulse)" opacity="0">
+    <animate attributeName="cx" values="24;1176" dur="9s" begin="3s" repeatCount="indefinite" calcMode="spline" keyTimes="0;1" keySplines=".45 0 .55 1"/>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.1;.9;1" dur="9s" begin="3s" repeatCount="indefinite"/>
+  </circle>
+  <g fill="#070B1F" stroke="#B9CBFF">
+    <rect x="400" y="244" width="12" height="12" transform="rotate(45 406 250)"/>
+    <rect x="788" y="244" width="12" height="12" transform="rotate(45 794 250)"/>
+  </g>
+
+  <g class="tc-panel tc-p1"><g transform="translate(32 32)">
+    <rect width="360" height="200" rx="14" fill="#0B1230" fill-opacity=".88" stroke="#6F8FF7" stroke-opacity=".24"/>
+    <rect class="tc-trace" style="animation-delay:0.00s" width="360" height="200" rx="14" fill="none" stroke="url(#tc-trace)" stroke-width="1.4" stroke-linecap="round"/>
+    <text class="tc-mono" x="24" y="38" font-size="11" letter-spacing="2.4" fill="#6F8FF7">01  LANGUAGES</text>
+    <text class="tc-serif" x="24" y="96" font-size="40" font-weight="300" fill="#EEF2FF">Python <tspan font-size="13" class="tc-mono" fill="#6F8FF7" dy="-18">PRIMARY</tspan></text>
+    <text class="tc-serif" x="24" y="146" font-size="32" font-weight="300" fill="#EEF2FF">TypeScript</text>
+    <text class="tc-serif" x="24" y="180" font-size="22" font-weight="300" fill="#A5AFCB">C++  ·  C  ·  SQL  ·  JavaScript</text>
+  </g></g>
+  <g class="tc-panel tc-p2"><g transform="translate(420 32)">
+    <rect width="360" height="200" rx="14" fill="#0B1230" fill-opacity=".88" stroke="#6F8FF7" stroke-opacity=".24"/>
+    <rect class="tc-trace" style="animation-delay:-1.15s" width="360" height="200" rx="14" fill="none" stroke="url(#tc-trace)" stroke-width="1.4" stroke-linecap="round"/>
+    <text class="tc-mono" x="24" y="38" font-size="11" letter-spacing="2.4" fill="#6F8FF7">02  AI · AGENTS</text>
+    <text class="tc-serif" x="24" y="90" font-size="30" font-weight="300" fill="#EEF2FF">LangGraph  ·  RAG</text>
+    <text class="tc-serif" x="24" y="130" font-size="24" font-weight="300" fill="#EEF2FF">Multi-Agent Systems</text>
+    <text class="tc-serif" x="24" y="164" font-size="22" font-weight="300" fill="#A5AFCB">Embeddings · Vector Search</text>
+    <text class="tc-mono" x="24" y="186" font-size="10" letter-spacing="1.4" fill="#A5AFCB">NLP · PANDAS · GEMINI</text>
+  </g></g>
+  <g class="tc-panel tc-p3"><g transform="translate(808 32)">
+    <rect width="360" height="200" rx="14" fill="#0B1230" fill-opacity=".88" stroke="#6F8FF7" stroke-opacity=".24"/>
+    <rect class="tc-trace" style="animation-delay:-2.30s" width="360" height="200" rx="14" fill="none" stroke="url(#tc-trace)" stroke-width="1.4" stroke-linecap="round"/>
+    <text class="tc-mono" x="24" y="38" font-size="11" letter-spacing="2.4" fill="#6F8FF7">03  BACKEND &amp; APIS</text>
+    <text class="tc-serif" x="24" y="90" font-size="32" font-weight="300" fill="#EEF2FF">FastAPI  ·  Node.js</text>
+    <text class="tc-serif" x="24" y="132" font-size="24" font-weight="300" fill="#EEF2FF">Express  ·  REST APIs</text>
+    <text class="tc-serif" x="24" y="170" font-size="22" font-weight="300" fill="#A5AFCB">BullMQ  ·  WebSockets</text>
+  </g></g>
+  <g class="tc-panel tc-p4"><g transform="translate(32 268)">
+    <rect width="360" height="200" rx="14" fill="#0B1230" fill-opacity=".88" stroke="#6F8FF7" stroke-opacity=".24"/>
+    <rect class="tc-trace" style="animation-delay:-3.45s" width="360" height="200" rx="14" fill="none" stroke="url(#tc-trace)" stroke-width="1.4" stroke-linecap="round"/>
+    <text class="tc-mono" x="24" y="38" font-size="11" letter-spacing="2.4" fill="#6F8FF7">04  DATA</text>
+    <text class="tc-serif" x="24" y="90" font-size="32" font-weight="300" fill="#EEF2FF">PostgreSQL  ·  Redis</text>
+    <text class="tc-serif" x="24" y="130" font-size="24" font-weight="300" fill="#EEF2FF">pgvector  ·  Prisma</text>
+    <text class="tc-serif" x="24" y="164" font-size="22" font-weight="300" fill="#A5AFCB">Distributed locks</text>
+    <text class="tc-mono" x="24" y="186" font-size="10" letter-spacing="1.4" fill="#A5AFCB">DBMS · ATOMIC CLAIMS</text>
+  </g></g>
+  <g class="tc-panel tc-p5"><g transform="translate(420 268)">
+    <rect width="360" height="200" rx="14" fill="#0B1230" fill-opacity=".88" stroke="#6F8FF7" stroke-opacity=".24"/>
+    <rect class="tc-trace" style="animation-delay:-4.60s" width="360" height="200" rx="14" fill="none" stroke="url(#tc-trace)" stroke-width="1.4" stroke-linecap="round"/>
+    <text class="tc-mono" x="24" y="38" font-size="11" letter-spacing="2.4" fill="#6F8FF7">05  CLOUD &amp; DELIVERY</text>
+    <text class="tc-serif" x="24" y="90" font-size="32" font-weight="300" fill="#EEF2FF">Docker  ·  AWS EC2</text>
+    <text class="tc-serif" x="24" y="132" font-size="24" font-weight="300" fill="#EEF2FF">Git  ·  cron  ·  Vercel</text>
+    <text class="tc-serif" x="24" y="170" font-size="22" font-weight="300" fill="#A5AFCB">OAuth 2.0  ·  JWT</text>
+  </g></g>
+  <g class="tc-panel tc-p6"><g transform="translate(808 268)">
+    <rect width="360" height="200" rx="14" fill="#0B1230" fill-opacity=".88" stroke="#6F8FF7" stroke-opacity=".24"/>
+    <rect class="tc-trace" style="animation-delay:-5.75s" width="360" height="200" rx="14" fill="none" stroke="url(#tc-trace)" stroke-width="1.4" stroke-linecap="round"/>
+    <text class="tc-mono" x="24" y="38" font-size="11" letter-spacing="2.4" fill="#6F8FF7">06  FUNDAMENTALS</text>
+    <text class="tc-serif" x="24" y="90" font-size="28" font-weight="300" fill="#EEF2FF">DSA in C++  ·  OOPS</text>
+    <text class="tc-serif" x="24" y="130" font-size="22" font-weight="300" fill="#EEF2FF">Operating Systems · DBMS</text>
+    <text class="tc-serif" x="24" y="164" font-size="22" font-weight="300" fill="#A5AFCB">Unit Testing · Vitest</text>
+    <text class="tc-mono" x="24" y="186" font-size="10" letter-spacing="1.4" fill="#A5AFCB">HTML · CSS</text>
+  </g></g>
+</svg>

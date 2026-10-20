@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="1200" height="420" role="img" aria-labelledby="ab-t ab-d">
+  <title id="ab-t">About Komal Mittal</title>
+  <desc id="ab-d">Python and AI engineer and backend developer. B.Tech in Information Technology at Bhagwan Parshuram Institute of Technology, New Delhi, CGPA 9.32. Python Engineering Intern at Meevick Enterprises, June to July 2026. Shipped Sakhi, Tickless and an NSE opening-range-breakout trading engine. Primary language Python; systems work in TypeScript; drawn to agentic AI.</desc>
+  <defs>
+    <linearGradient id="ab-bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0B1230"/><stop offset="1" stop-color="#070B1F"/></linearGradient>
+    <radialGradient id="ab-glow" cx="80%" cy="20%" r="70%"><stop offset="0" stop-color="#2647C8" stop-opacity=".5"/><stop offset="1" stop-color="#172B78" stop-opacity="0"/></radialGradient>
+    <pattern id="ab-scan" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="1" fill="#EEF2FF" opacity=".025"/></pattern>
+    <clipPath id="ab-c0"><rect class="ab-type" x="68" y="112" width="86" height="22" style="animation-delay:0.60s;animation-duration:0.26s;animation-timing-function:steps(6)"/></clipPath>
+    <clipPath id="ab-c1"><rect class="ab-type" x="68" y="137" width="493" height="22" style="animation-delay:1.01s;animation-duration:0.53s;animation-timing-function:steps(1)"/></clipPath>
+    <clipPath id="ab-c2"><rect class="ab-type" x="68" y="162" width="180" height="22" style="animation-delay:1.89s;animation-duration:0.57s;animation-timing-function:steps(17)"/></clipPath>
+    <clipPath id="ab-c3"><rect class="ab-type" x="68" y="187" width="534" height="22" style="animation-delay:2.61s;animation-duration:0.53s;animation-timing-function:steps(1)"/></clipPath>
+    <clipPath id="ab-c4"><rect class="ab-type" x="68" y="212" width="189" height="22" style="animation-delay:3.49s;animation-duration:0.59s;animation-timing-function:steps(18)"/></clipPath>
+    <clipPath id="ab-c5"><rect class="ab-type" x="68" y="237" width="484" height="22" style="animation-delay:4.23s;animation-duration:0.53s;animation-timing-function:steps(1)"/></clipPath>
+    <clipPath id="ab-c6"><rect class="ab-type" x="68" y="262" width="137" height="22" style="animation-delay:5.11s;animation-duration:0.43s;animation-timing-function:steps(12)"/></clipPath>
+    <clipPath id="ab-c7"><rect class="ab-type" x="68" y="287" width="376" height="22" style="animation-delay:5.69s;animation-duration:0.53s;animation-timing-function:steps(1)"/></clipPath>
+    <clipPath id="ab-c8"><rect class="ab-type" x="68" y="312" width="163" height="22" style="animation-delay:6.57s;animation-duration:0.51s;animation-timing-function:steps(15)"/></clipPath>
+    <clipPath id="ab-c9"><rect class="ab-type" x="68" y="337" width="426" height="22" style="animation-delay:7.23s;animation-duration:0.53s;animation-timing-function:steps(1)"/></clipPath>
+  </defs>
+  <style>
+    .ab-serif { font-family: Georgia, "Iowan Old Style", "Palatino Linotype", "Times New Roman", serif; }
+    .ab-mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; }
+    .ab-sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+    .ab-type { transform-box: fill-box; transform-origin: left center; animation-name: ab-type; animation-fill-mode: both; }
+    .ab-card { animation: ab-in 1s cubic-bezier(.16,1,.3,1) both; }
+    .ab-fade { animation: ab-fade 1s ease both; }
+    @keyframes ab-type { 0% { transform: scaleX(0); } 85%, 100% { transform: scaleX(1); } }
+    @keyframes ab-in { from { opacity: 0; transform: translateX(24px); } to { opacity: 1; transform: none; } }
+    @keyframes ab-fade { from { opacity: 0; } to { opacity: 1; } }
+    @media (prefers-reduced-motion: reduce) { .ab-type, .ab-card, .ab-fade { animation: none; } }
+  </style>
+  <rect width="1200" height="420" rx="20" fill="url(#ab-bg)"/>
+  <rect width="1200" height="420" rx="20" fill="url(#ab-glow)"/>
+  <rect x=".5" y=".5" width="1199" height="419" rx="19.5" fill="none" stroke="#6F8FF7" stroke-opacity=".18"/>
+
+  <!-- Terminal window -->
+  <g class="ab-fade">
+    <rect x="40" y="40" width="760" height="340" rx="14" fill="#070B1F" stroke="#6F8FF7" stroke-opacity=".32"/>
+    <rect x="40" y="40" width="760" height="340" rx="14" fill="url(#ab-scan)"/>
+    <path d="M40 54 a14 14 0 0 1 14 -14 H786 a14 14 0 0 1 14 14 V76 H40 Z" fill="#0B1230"/>
+    <line x1="40" y1="76" x2="800" y2="76" stroke="#6F8FF7" stroke-opacity=".22"/>
+    <circle cx="62" cy="58" r="5" fill="#4169E1"/><circle cx="80" cy="58" r="5" fill="#172B78"/><circle cx="98" cy="58" r="5" fill="#172B78"/>
+    <text class="ab-mono" x="420" y="62" text-anchor="middle" font-size="11" letter-spacing="1.5" fill="#A5AFCB">komal@github: ~</text>
+  </g>
+  <g class="ab-mono" font-size="13.5">
+      <g clip-path="url(#ab-c0)"><text x="72" y="128" fill="#6F8FF7">$</text><text x="94" y="128" fill="#EEF2FF">whoami</text></g>
+      <g clip-path="url(#ab-c1)"><text x="72" y="153" fill="#4169E1">→</text><text x="94" y="153" fill="#A5AFCB">Komal Mittal · Python &amp; AI Engineer · Backend Developer</text></g>
+      <g clip-path="url(#ab-c2)"><text x="72" y="178" fill="#6F8FF7">$</text><text x="94" y="178" fill="#EEF2FF">cat education.txt</text></g>
+      <g clip-path="url(#ab-c3)"><text x="72" y="203" fill="#4169E1">→</text><text x="94" y="203" fill="#A5AFCB">B.Tech IT · Bhagwan Parshuram Institute of Technology · 9.32</text></g>
+      <g clip-path="url(#ab-c4)"><text x="72" y="228" fill="#6F8FF7">$</text><text x="94" y="228" fill="#EEF2FF">cat experience.txt</text></g>
+      <g clip-path="url(#ab-c5)"><text x="72" y="253" fill="#4169E1">→</text><text x="94" y="253" fill="#A5AFCB">Python Engineering Intern · Meevick Enterprises · 2026</text></g>
+      <g clip-path="url(#ab-c6)"><text x="72" y="278" fill="#6F8FF7">$</text><text x="94" y="278" fill="#EEF2FF">ls ./shipped</text></g>
+      <g clip-path="url(#ab-c7)"><text x="72" y="303" fill="#4169E1">→</text><text x="94" y="303" fill="#A5AFCB">sakhi · tickless · nse-orb-trading-engine</text></g>
+      <g clip-path="url(#ab-c8)"><text x="72" y="328" fill="#6F8FF7">$</text><text x="94" y="328" fill="#EEF2FF">echo $PRINCIPLE</text></g>
+      <g clip-path="url(#ab-c9)"><text x="72" y="353" fill="#4169E1">→</text><text x="94" y="353" fill="#A5AFCB">ground every answer · never send an email twice</text></g>
+  </g>
+  <rect x="72" y="364" width="8" height="16" fill="#B9CBFF" class="ab-fade" style="animation-delay:8.1s">
+    <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;.5;.5;1" dur="1.1s" repeatCount="indefinite"/>
+  </rect>
+
+    <g class="ab-card" style="animation-delay:1.2s"><g transform="translate(836 70)">
+      <rect width="324" height="88" rx="14" fill="#0B1230" stroke="#6F8FF7" stroke-opacity=".3"/>
+      <rect x="0" y="0" width="3" height="88" rx="1.5" fill="#6F8FF7"/>
+      <text class="ab-mono" x="22" y="26" font-size="10" letter-spacing="2" fill="#6F8FF7">PRIMARY LANGUAGE</text>
+      <text class="ab-serif" x="22" y="58" font-size="28" font-weight="300" fill="#EEF2FF">Python</text>
+      <text class="ab-sans" x="22" y="78" font-size="12" fill="#A5AFCB">agents · FastAPI · trading engine</text>
+    </g></g>
+    <g class="ab-card" style="animation-delay:1.7s"><g transform="translate(836 174)">
+      <rect width="324" height="88" rx="14" fill="#0B1230" stroke="#6F8FF7" stroke-opacity=".3"/>
+      <rect x="0" y="0" width="3" height="88" rx="1.5" fill="#6F8FF7"/>
+      <text class="ab-mono" x="22" y="26" font-size="10" letter-spacing="2" fill="#6F8FF7">SYSTEMS IN</text>
+      <text class="ab-serif" x="22" y="58" font-size="28" font-weight="300" fill="#EEF2FF">TypeScript</text>
+      <text class="ab-sans" x="22" y="78" font-size="12" fill="#A5AFCB">Node.js · BullMQ · Redis locks</text>
+    </g></g>
+    <g class="ab-card" style="animation-delay:2.2s"><g transform="translate(836 278)">
+      <rect width="324" height="88" rx="14" fill="#0B1230" stroke="#6F8FF7" stroke-opacity=".3"/>
+      <rect x="0" y="0" width="3" height="88" rx="1.5" fill="#6F8FF7"/>
+      <text class="ab-mono" x="22" y="26" font-size="10" letter-spacing="2" fill="#6F8FF7">DRAWN TO</text>
+      <text class="ab-serif" x="22" y="58" font-size="28" font-weight="300" fill="#EEF2FF">Agentic AI</text>
+      <text class="ab-sans" x="22" y="78" font-size="12" fill="#A5AFCB">LangGraph · RAG · Hindi voice</text>
+    </g></g>
+</svg>

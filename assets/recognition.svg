@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 430" width="1200" height="430" role="img" aria-labelledby="ach-title ach-desc">
+  <title id="ach-title">Recognition</title>
+  <desc id="ach-desc">Meesho ScriptedBy Her 2.0 National Semi-Finalist, ranked Top 50 among 36,000+ women developers. Flipkart GRiD 8.0 Semi-Finalist among 165,000+ applicants. CGPA 9.32. Sakhi: 11-node LangGraph with 4 specialist agents. Tickless: 60+ Vitest unit tests.</desc>
+
+  <defs>
+    <linearGradient id="ach-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0B1230"/>
+      <stop offset="1" stop-color="#070B1F"/>
+    </linearGradient>
+    <radialGradient id="ach-glow-a" cx="85%" cy="0%" r="90%">
+      <stop offset="0" stop-color="#2647C8" stop-opacity=".7"/>
+      <stop offset="1" stop-color="#172B78" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="ach-glow-b" cx="90%" cy="0%" r="90%">
+      <stop offset="0" stop-color="#6F8FF7" stop-opacity=".32"/>
+      <stop offset="1" stop-color="#172B78" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ach-hair" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#C9A27A" stop-opacity="0"/>
+      <stop offset=".4" stop-color="#C9A27A"/>
+      <stop offset=".6" stop-color="#B9CBFF"/>
+      <stop offset="1" stop-color="#B9CBFF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="ach-outline" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#B9CBFF" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#B9CBFF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="ach-sheen" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#EEF2FF" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#EEF2FF" stop-opacity=".08"/>
+      <stop offset="1" stop-color="#EEF2FF" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="ach-clip-a"><rect x="0" y="0" width="690" height="250" rx="16"/></clipPath>
+    <clipPath id="ach-clip-b"><rect x="0" y="0" width="450" height="250" rx="16"/></clipPath>
+    <linearGradient id="ach-trace" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#EEF2FF"/><stop offset=".45" stop-color="#B9CBFF"/><stop offset="1" stop-color="#6F8FF7" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <style>
+    .ach-serif { font-family: Georgia, "Iowan Old Style", "Palatino Linotype", "Times New Roman", serif; }
+    .ach-mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; }
+    .ach-sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+    .ach-in { animation: ach-in 1.2s cubic-bezier(.16,1,.3,1) both; }
+    .a1 { animation-delay: .1s; } .a2 { animation-delay: .35s; } .a3 { animation-delay: .6s; }
+    .ach-draw { stroke-dasharray: 1200; stroke-dashoffset: 1200; animation: ach-draw 2.6s cubic-bezier(.65,0,.35,1) .8s forwards; }
+    @keyframes ach-in { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+    @keyframes ach-draw { to { stroke-dashoffset: 0; } }
+    @media (prefers-reduced-motion: reduce) {
+      .ach-in { animation: none; }
+      .ach-draw { animation: none; stroke-dashoffset: 0; }
+    }
+    .ach-trace-a { stroke-dasharray: 340 1540; stroke-dashoffset: 1880; animation: ach-trace-a 6s linear infinite; }
+    .ach-trace-b { stroke-dasharray: 260 1140; stroke-dashoffset: 1400; animation: ach-trace-b 6s linear -3s infinite; }
+    @keyframes ach-trace-a { to { stroke-dashoffset: 0; } }
+    @keyframes ach-trace-b { to { stroke-dashoffset: 0; } }
+    @media (prefers-reduced-motion: reduce) { .ach-trace-a, .ach-trace-b { display: none; } }
+  </style>
+
+  <rect width="1200" height="430" rx="20" fill="url(#ach-bg)"/>
+  <rect x=".5" y=".5" width="1199" height="429" rx="19.5" fill="none" stroke="#6F8FF7" stroke-opacity=".18"/>
+
+  <!-- Meesho ScriptedBy{Her} 2.0 — hero card -->
+  <g class="ach-in a1"><g transform="translate(24 24)">
+    <g clip-path="url(#ach-clip-a)">
+      <rect width="690" height="250" fill="#0B1230"/>
+      <rect width="690" height="250" fill="url(#ach-glow-a)"/>
+      <text class="ach-serif" x="672" y="124" text-anchor="end" font-size="128" font-weight="300" letter-spacing="-6" fill="url(#ach-outline)">Top 50</text>
+      <rect x="-300" y="0" width="260" height="250" fill="url(#ach-sheen)" transform="skewX(-18)">
+        <animate attributeName="x" values="-300;900;900" keyTimes="0;.35;1" dur="9s" begin="2s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+    <rect x=".5" y=".5" width="689" height="249" rx="15.5" fill="none" stroke="#6F8FF7" stroke-opacity=".4"/>
+    <rect class="ach-trace-a" x=".5" y=".5" width="689" height="249" rx="15.5" fill="none" stroke="url(#ach-trace)" stroke-width="1.8" stroke-linecap="round"/>
+    <rect x="40" y="0" width="300" height="1" fill="url(#ach-hair)"/>
+    <text class="ach-mono" x="36" y="154" font-size="12" letter-spacing="2.6" fill="#6F8FF7">MEESHO · SCRIPTEDBY{HER} 2.0 · AGENTIC AI FOR BHARAT</text>
+    <text class="ach-serif" x="34" y="204" font-size="46" font-weight="300" letter-spacing="-1" fill="#EEF2FF">National Semi-Finalist</text>
+    <text class="ach-sans" x="36" y="230" font-size="14" fill="#A5AFCB">Top 50 of 36,000+ women developers · India's largest women-only hackathon</text>
+  </g></g>
+
+  <!-- Flipkart GRiD 8.0 -->
+  <g class="ach-in a2"><g transform="translate(702 24)">
+    <g transform="translate(24 0)">
+      <g clip-path="url(#ach-clip-b)">
+        <rect width="450" height="250" fill="#0B1230"/>
+        <rect width="450" height="250" fill="url(#ach-glow-b)"/>
+        <text class="ach-serif" x="462" y="132" text-anchor="end" font-size="160" font-style="italic" font-weight="300" letter-spacing="-6" fill="none" stroke="#B9CBFF" stroke-opacity=".3">8.0</text>
+      </g>
+      <rect x=".5" y=".5" width="449" height="249" rx="15.5" fill="none" stroke="#6F8FF7" stroke-opacity=".32"/>
+      <rect class="ach-trace-b" x=".5" y=".5" width="449" height="249" rx="15.5" fill="none" stroke="url(#ach-trace)" stroke-width="1.8" stroke-linecap="round"/>
+      <rect x="40" y="0" width="220" height="1" fill="url(#ach-hair)"/>
+      <text class="ach-mono" x="32" y="154" font-size="12" letter-spacing="2.6" fill="#6F8FF7">FLIPKART · GRiD 8.0</text>
+      <text class="ach-serif" x="30" y="204" font-size="46" font-weight="300" letter-spacing="-1" fill="#EEF2FF">Semi-Finalist</text>
+      <text class="ach-sans" x="32" y="230" font-size="14" fill="#A5AFCB">165,000+ applicants · India's largest campus challenge</text>
+    </g>
+  </g></g>
+
+  <!-- Animated connector across the score strip -->
+  <path class="ach-draw" d="M24 300 H1176" stroke="#6F8FF7" stroke-opacity=".38"/>
+
+  <!-- Score strip -->
+  <g class="ach-in a3 ach-sans" font-size="13" fill="#A5AFCB">
+    <g transform="translate(36 300)">
+      <circle cx="0" cy="0" r="3.5" fill="#B9CBFF"/>
+      <text class="ach-mono" y="34" font-size="11" letter-spacing="2" fill="#6F8FF7">ACADEMICS</text>
+      <text class="ach-serif" y="78" font-size="40" font-weight="300" fill="#EEF2FF">9.32</text>
+      <text y="102">CGPA · B.Tech IT</text>
+    </g>
+    <g transform="translate(266 300)">
+      <circle cx="0" cy="0" r="3.5" fill="#B9CBFF"/>
+      <text class="ach-mono" y="34" font-size="11" letter-spacing="2" fill="#6F8FF7">MEESHO HACKATHON</text>
+      <text class="ach-serif" y="78" font-size="40" font-weight="300" fill="#EEF2FF">Top 50</text>
+      <text y="102">of 36,000+ developers</text>
+    </g>
+    <g transform="translate(496 300)">
+      <circle cx="0" cy="0" r="3.5" fill="#B9CBFF"/>
+      <text class="ach-mono" y="34" font-size="11" letter-spacing="2" fill="#6F8FF7">FLIPKART GRiD 8.0</text>
+      <text class="ach-serif" y="78" font-size="40" font-weight="300" fill="#EEF2FF">165K+</text>
+      <text y="102">applicants in the field</text>
+    </g>
+    <g transform="translate(726 300)">
+      <circle cx="0" cy="0" r="3.5" fill="#B9CBFF"/>
+      <text class="ach-mono" y="34" font-size="11" letter-spacing="2" fill="#6F8FF7">SAKHI</text>
+      <text class="ach-serif" y="78" font-size="40" font-weight="300" fill="#EEF2FF">11</text>
+      <text y="102">LangGraph nodes, 4 agents</text>
+    </g>
+    <g transform="translate(956 300)">
+      <circle cx="0" cy="0" r="3.5" fill="#B9CBFF"/>
+      <text class="ach-mono" y="34" font-size="11" letter-spacing="2" fill="#6F8FF7">TICKLESS</text>
+      <text class="ach-serif" y="78" font-size="40" font-weight="300" fill="#EEF2FF">60+</text>
+      <text y="102">Vitest unit tests</text>
+    </g>
+  </g>
+</svg>
