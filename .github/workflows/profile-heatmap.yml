@@ -26,7 +26,8 @@ jobs:
       # Public calendar data only; no token is written anywhere.
       - name: Fetch contributions
         env:
-          GH_USERNAME: ${{ github.repository_owner }}
+          # Always the main account, so this preview repo shows the real profile.
+          GH_USERNAME: Komal25-ux
         run: node scripts/fetch-contributions.mjs
 
       - name: Render snake SVG

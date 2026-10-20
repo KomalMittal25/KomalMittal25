@@ -20,16 +20,16 @@
 
 <img src="assets/title-work.svg" width="100%" alt="04 Selected work — Built to survive production.">
 
-<a href="https://github.com/KomalMittal25/Sakhi"><img src="assets/project-sakhi.svg" width="100%" alt="Sakhi: a Hindi voice-native co-pilot for Meesho resellers. An 11-node LangGraph state machine routing Catalog, Customer, Growth and Returns agents behind FastAPI, RAG over a 100-SKU pgvector catalog, 3 human-in-the-loop gates and a 5-model fallback. Python, FastAPI, LangGraph, pgvector, Gemini, Docker."></a>
+<a href="https://github.com/Komal25-ux/Meesho_ScriptedByHer2.0_KomalMittal"><img src="assets/project-sakhi.svg" width="100%" alt="Sakhi: a Hindi voice-native co-pilot for Meesho resellers. An 11-node LangGraph state machine routing Catalog, Customer, Growth and Returns agents behind FastAPI, RAG over a 100-SKU pgvector catalog, 3 human-in-the-loop gates and a 5-model fallback. Python, FastAPI, LangGraph, pgvector, Gemini, Docker."></a>
 <p align="center">
   <a href="https://meesho-sakhi-komal25.vercel.app/"><img src="https://img.shields.io/badge/Live_demo-meesho--sakhi-172B78?style=for-the-badge&labelColor=0B1230&logoColor=EEF2FF&logo=vercel" alt="Sakhi live demo"></a>
-  <a href="https://github.com/KomalMittal25/Sakhi"><img src="https://img.shields.io/badge/Repository-Sakhi-172B78?style=for-the-badge&labelColor=0B1230&logoColor=EEF2FF&logo=github" alt="Sakhi repository"></a>
+  <a href="https://github.com/Komal25-ux/Meesho_ScriptedByHer2.0_KomalMittal"><img src="https://img.shields.io/badge/Repository-Sakhi-172B78?style=for-the-badge&labelColor=0B1230&logoColor=EEF2FF&logo=github" alt="Sakhi repository"></a>
 </p>
 
-<a href="https://github.com/KomalMittal25/tickless"><img src="assets/project-tickless.svg" width="100%" alt="Tickless: a distributed email scheduler with zero cron jobs. Campaigns become BullMQ delayed jobs in Redis, paced per sender by a Redis SET NX PX lock and atomic hourly rate windows, sent from the user's Gmail via OAuth 2.0. Crash-safe with idempotent job IDs and an orphan-job scanner; 60+ Vitest unit tests. TypeScript, Node.js, BullMQ, Redis, PostgreSQL, Prisma, Next.js."></a>
+<a href="https://github.com/Komal25-ux/outbox-sde-assignment"><img src="assets/project-tickless.svg" width="100%" alt="Tickless: a distributed email scheduler with zero cron jobs. Campaigns become BullMQ delayed jobs in Redis, paced per sender by a Redis SET NX PX lock and atomic hourly rate windows, sent from the user's Gmail via OAuth 2.0. Crash-safe with idempotent job IDs and an orphan-job scanner; 60+ Vitest unit tests. TypeScript, Node.js, BullMQ, Redis, PostgreSQL, Prisma, Next.js."></a>
 <p align="center">
   <a href="https://tickless-nu.vercel.app"><img src="https://img.shields.io/badge/Live_demo-tickless-172B78?style=for-the-badge&labelColor=0B1230&logoColor=EEF2FF&logo=vercel" alt="Tickless live demo"></a>
-  <a href="https://github.com/KomalMittal25/tickless"><img src="https://img.shields.io/badge/Repository-Tickless-172B78?style=for-the-badge&labelColor=0B1230&logoColor=EEF2FF&logo=github" alt="Tickless repository"></a>
+  <a href="https://github.com/Komal25-ux/outbox-sde-assignment"><img src="https://img.shields.io/badge/Repository-Tickless-172B78?style=for-the-badge&labelColor=0B1230&logoColor=EEF2FF&logo=github" alt="Tickless repository"></a>
 </p>
 
 <p align="center">
@@ -46,7 +46,7 @@
 <img src="assets/contribution-snake.svg" width="100%" alt="Animated snake eating my real public GitHub contributions over the past year, with totals, active days, longest streak and busiest day. Re-rendered daily.">
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=KomalMittal25&show_icons=true&hide_rank=true&hide_border=true&border_radius=16&bg_color=0B1230&title_color=B9CBFF&text_color=A5AFCB&icon_color=6F8FF7&custom_title=GitHub%20at%20a%20glance" width="400" alt="GitHub stats for KomalMittal25: stars, commits, pull requests and issues">
+  <img src="https://github-readme-stats.vercel.app/api?username=Komal25-ux&show_icons=true&hide_rank=true&hide_border=true&border_radius=16&bg_color=0B1230&title_color=B9CBFF&text_color=A5AFCB&icon_color=6F8FF7&custom_title=GitHub%20at%20a%20glance" width="400" alt="GitHub stats for Komal25-ux: stars, commits, pull requests and issues">
 </p>
 
 <img src="assets/title-education.svg" width="100%" alt="07 Education — Foundations, with distinction.">
@@ -58,7 +58,7 @@
   <a href="mailto:komall2506@gmail.com"><img src="https://img.shields.io/badge/Email-komall2506@gmail.com-2647C8?style=for-the-badge&labelColor=0B1230&logoColor=EEF2FF&logo=gmail" alt="Email komall2506@gmail.com"></a>
   <a href="https://www.linkedin.com/in/komalmittal25/"><img src="https://img.shields.io/badge/LinkedIn-komalmittal25-2647C8?style=for-the-badge&labelColor=0B1230&logoColor=EEF2FF&logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iI0VFRjJGRiIgZD0iTTIwLjQ1IDIwLjQ1aC0zLjU2di01LjU3YzAtMS4zMy0uMDItMy4wNC0xLjg1LTMuMDQtMS44NiAwLTIuMTQgMS40NS0yLjE0IDIuOTR2NS42N0g5LjM1VjloMy40MXYxLjU2aC4wNWMuNDgtLjkgMS42NC0xLjg1IDMuMzctMS44NSAzLjYgMCA0LjI3IDIuMzcgNC4yNyA1LjQ2djYuMjhaTTUuMzQgNy40M2EyLjA2IDIuMDYgMCAxIDEgMC00LjEzIDIuMDYgMi4wNiAwIDAgMSAwIDQuMTNaTTcuMTIgMjAuNDVIMy41NlY5aDMuNTZ2MTEuNDVaTTIyLjIyIDBIMS43N0MuNzkgMCAwIC43NyAwIDEuNzN2MjAuNTRDMCAyMy4yMy43OSAyNCAxLjc3IDI0aDIwLjQ1Yy45OCAwIDEuNzgtLjc3IDEuNzgtMS43M1YxLjczQzI0IC43NyAyMy4yIDAgMjIuMjIgMFoiLz48L3N2Zz4=" alt="LinkedIn profile"></a>
   <a href="https://leetcode.com/u/Komal_Mittal/"><img src="https://img.shields.io/badge/LeetCode-Komal__Mittal-2647C8?style=for-the-badge&labelColor=0B1230&logoColor=EEF2FF&logo=leetcode" alt="LeetCode profile Komal_Mittal"></a>
-  <a href="https://github.com/KomalMittal25"><img src="https://img.shields.io/badge/GitHub-KomalMittal25-2647C8?style=for-the-badge&labelColor=0B1230&logoColor=EEF2FF&logo=github" alt="GitHub profile KomalMittal25"></a>
+  <a href="https://github.com/Komal25-ux"><img src="https://img.shields.io/badge/GitHub-Komal25--ux-2647C8?style=for-the-badge&labelColor=0B1230&logoColor=EEF2FF&logo=github" alt="GitHub profile Komal25-ux"></a>
 </p>
 
 <a href="https://www.linkedin.com/in/komalmittal25/">
