@@ -53,7 +53,7 @@ def title(slug, num, label, lead, italic, right):
     p = "t" + slug[:2]
     aria = esc(f"{num} {label.title()}: {lead}{italic}").replace("'", "&#x27;")
     return f"""
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" width="1200" height="120" role="img" aria-label="{aria}">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 136" width="1200" height="136" role="img" aria-label="{aria}">
   <defs>
     <linearGradient id="{p}-line" gradientUnits="userSpaceOnUse" x1="40" y1="0" x2="1160" y2="0">
       <stop offset="0" stop-color="{ACC}"/><stop offset=".6" stop-color="{GLOW}"/><stop offset="1" stop-color="{GLOW}" stop-opacity="0"/>
@@ -62,6 +62,8 @@ def title(slug, num, label, lead, italic, right):
       <stop offset="0" stop-color="{LIGHT}"/><stop offset=".5" stop-color="#FFFFFF"/><stop offset="1" stop-color="{LIGHT}"/>
       <animateTransform attributeName="gradientTransform" type="translate" values="0 0;1500 0;1500 0" keyTimes="0;.4;1" dur="7s" begin="1.5s" repeatCount="indefinite"/>
     </linearGradient>
+    <linearGradient id="{p}-bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="{BG}"/><stop offset="1" stop-color="{DEEP}"/></linearGradient>
+    <radialGradient id="{p}-glow" cx="12%" cy="0%" r="60%"><stop offset="0" stop-color="{GLOW}" stop-opacity=".45"/><stop offset="1" stop-color="{GLOW}" stop-opacity="0"/></radialGradient>
     <radialGradient id="{p}-pulse"><stop offset="0" stop-color="{TEXT}"/><stop offset=".5" stop-color="{LIGHT}" stop-opacity=".6"/><stop offset="1" stop-color="{ACC}" stop-opacity="0"/></radialGradient>
   </defs>
   <style>
@@ -73,6 +75,11 @@ def title(slug, num, label, lead, italic, right):
     @keyframes {p}-draw {{ to {{ stroke-dashoffset: 0; }} }}
     @media (prefers-reduced-motion: reduce) {{ .{p}-in {{ animation: none; }} .{p}-draw {{ animation: none; stroke-dashoffset: 0; }} }}
   </style>
+  <!-- Solid card, so the heading reads on GitHub's light and dark themes alike -->
+  <rect width="1200" height="136" rx="20" fill="url(#{p}-bg)"/>
+  <rect width="1200" height="136" rx="20" fill="url(#{p}-glow)"/>
+  <rect x=".5" y=".5" width="1199" height="135" rx="19.5" fill="none" stroke="{ACC}" stroke-opacity=".2"/>
+  <g transform="translate(16 12)">
   <g class="{p}-in">
     <text class="{p}-mono" x="40" y="34" font-size="12" letter-spacing="3" fill="{ACC}"><tspan fill="{LIGHT}">{num}</tspan>   {esc(label)}</text>
   </g>
@@ -80,13 +87,14 @@ def title(slug, num, label, lead, italic, right):
     <text class="{p}-serif" x="38" y="84" font-size="44" font-weight="300" letter-spacing="-1" fill="{TEXT}">{esc(lead)}<tspan font-style="italic" fill="url(#{p}-sheen)">{esc(italic)}</tspan></text>
   </g>
   <g class="{p}-in {p}-d3">
-    <text class="{p}-mono" x="1160" y="34" text-anchor="end" font-size="10.5" letter-spacing="2.4" fill="{MUTE}">{esc(right)}</text>
+    <text class="{p}-mono" x="1136" y="34" text-anchor="end" font-size="10.5" letter-spacing="2.4" fill="{MUTE}">{esc(right)}</text>
   </g>
-  <path class="{p}-draw" d="M40 106 H1160" stroke="url(#{p}-line)" stroke-width="1"/>
+  <path class="{p}-draw" d="M40 106 H1136" stroke="url(#{p}-line)" stroke-width="1"/>
   <circle cx="40" cy="106" r="7" fill="url(#{p}-pulse)" opacity="0">
-    <animate attributeName="cx" values="40;1160" dur="6s" begin="2.3s" repeatCount="indefinite" calcMode="spline" keyTimes="0;1" keySplines=".45 0 .55 1"/>
+    <animate attributeName="cx" values="40;1136" dur="6s" begin="2.3s" repeatCount="indefinite" calcMode="spline" keyTimes="0;1" keySplines=".45 0 .55 1"/>
     <animate attributeName="opacity" values="0;1;0" keyTimes="0;.15;1" dur="6s" begin="2.3s" repeatCount="indefinite"/>
   </circle>
+  </g>
 </svg>"""
 
 
